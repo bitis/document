@@ -359,7 +359,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{host}}/api/store/product/list?type=&category=&keyword&withs=commissionConfig",
+							"raw": "{{host}}/api/store/product/list?type=&category=&keyword",
 							"host": [
 								"{{host}}"
 							],
@@ -384,10 +384,6 @@
 									"key": "keyword",
 									"value": null,
 									"description": "搜索词"
-								},
-								{
-									"key": "withs",
-									"value": "commissionConfig"
 								}
 							]
 						}
@@ -472,7 +468,7 @@
 							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n    \"code\": 0,\n    \"msg\": \"OK\",\n    \"data\": {\n        \"current_page\": 1,\n        \"data\": [\n            {\n                \"id\": 1,\n                \"store_id\": 1,\n                \"category_id\": 1,\n                \"type\": 1,\n                \"name\": \"金鸡奖\",\n                \"unit\": \"个\",\n                \"subtitle\": \"急急急急\",\n                \"first_image\": null,\n                \"bar_code\": null,\n                \"price\": \"798.00\",\n                \"original_price\": \"998.00\",\n                \"member_price\": \"598.00\",\n                \"stock\": 0,\n                \"stock_warn\": 0,\n                \"flag\": 1,\n                \"spec_type\": \"1\",\n                \"commission_config\": 0\n            },\n            {\n                \"id\": 2,\n                \"store_id\": 1,\n                \"category_id\": 1,\n                \"type\": 1,\n                \"name\": \"金鸡奖2\",\n                \"unit\": \"个\",\n                \"subtitle\": \"急急急急\",\n                \"first_image\": null,\n                \"bar_code\": null,\n                \"price\": \"798.00\",\n                \"original_price\": \"998.00\",\n                \"member_price\": \"598.00\",\n                \"stock\": 0,\n                \"stock_warn\": 0,\n                \"flag\": 1,\n                \"spec_type\": \"1\",\n                \"commission_config\": 0\n            }\n        ],\n        \"first_page_url\": \"http://store.com/api/store/product/list?page=1\",\n        \"from\": 1,\n        \"next_page_url\": null,\n        \"path\": \"http://store.com/api/store/product/list\",\n        \"per_page\": 10,\n        \"prev_page_url\": null,\n        \"to\": 2\n    }\n}"
+							"body": "{\n    \"code\": 0,\n    \"msg\": \"OK\",\n    \"data\": {\n        \"current_page\": 1,\n        \"data\": [\n            {\n                \"id\": 1,\n                \"store_id\": 1,\n                \"category_id\": 1,\n                \"type\": 1,\n                \"name\": \"金鸡奖\",\n                \"unit\": \"个\",\n                \"subtitle\": \"急急急急\",\n                \"first_image\": null,\n                \"bar_code\": null,\n                \"price\": \"798.00\",\n                \"original_price\": \"998.00\",\n                \"member_price\": \"598.00\",\n                \"stock\": 0,\n                \"stock_warn\": 0,\n                \"flag\": 1,\n                \"spec_type\": \"1\",\n                \"commission_config\": 0 // 是否开启提成 （配置提成时可用来判断是否设置过提成）\n            },\n            {\n                \"id\": 2,\n                \"store_id\": 1,\n                \"category_id\": 1,\n                \"type\": 1,\n                \"name\": \"金鸡奖2\",\n                \"unit\": \"个\",\n                \"subtitle\": \"急急急急\",\n                \"first_image\": null,\n                \"bar_code\": null,\n                \"price\": \"798.00\",\n                \"original_price\": \"998.00\",\n                \"member_price\": \"598.00\",\n                \"stock\": 0,\n                \"stock_warn\": 0,\n                \"flag\": 1,\n                \"spec_type\": \"1\",\n                \"commission_config\": 0\n            }\n        ],\n        \"first_page_url\": \"http://store.com/api/store/product/list?page=1\",\n        \"from\": 1,\n        \"next_page_url\": null,\n        \"path\": \"http://store.com/api/store/product/list\",\n        \"per_page\": 10,\n        \"prev_page_url\": null,\n        \"to\": 2\n    }\n}"
 						}
 					]
 				},
