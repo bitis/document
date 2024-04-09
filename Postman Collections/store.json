@@ -1,0 +1,1220 @@
+{
+	"info": {
+		"_postman_id": "ad67d25a-28fb-4d22-a366-a84e0eb05255",
+		"name": "门店端",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "通用",
+			"item": [
+				{
+					"name": "获取验证码",
+					"id": "4b943ae2-c239-4ba9-acf5-2618cce702ee",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{host}}/api/verify/code?mobile=15138674502",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"verify",
+								"code"
+							],
+							"query": [
+								{
+									"key": "mobile",
+									"value": "15138674502",
+									"type": "text"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "地区选择",
+					"id": "33908337-e2bf-4eb9-8795-9fd1597f7a51",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": "{{host}}/api/common/area"
+					},
+					"response": []
+				},
+				{
+					"name": "行业选择",
+					"id": "44e23e66-0a12-433e-848a-a37df7e2715a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": "{{host}}/api/common/industry"
+					},
+					"response": []
+				}
+			],
+			"id": "2e916061-d1e4-4d73-b605-13ac0bbee9bf"
+		},
+		{
+			"name": "用户",
+			"item": [
+				{
+					"name": "注册",
+					"id": "1a25a806-0db3-4f16-9e2f-341ad26e4ec3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "store_name",
+									"value": "哈哈",
+									"type": "text",
+									"description": "店名"
+								},
+								{
+									"key": "mobile",
+									"value": "15138674502",
+									"type": "text",
+									"description": "手机号"
+								},
+								{
+									"key": "verify_code",
+									"value": "888888",
+									"description": "验证码",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "888888",
+									"description": "密码",
+									"type": "text"
+								},
+								{
+									"key": "industry_id",
+									"value": "27",
+									"description": "行业ID",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{host}}/api/store/auth/register"
+					},
+					"response": []
+				},
+				{
+					"name": "登录",
+					"id": "be54abae-be56-445e-a138-358d02333824",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mobile",
+									"value": "15138674502",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "888888",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{host}}/api/store/auth/login"
+					},
+					"response": []
+				},
+				{
+					"name": "登出",
+					"id": "3d20578a-4803-4833-a443-6ef617dd9359",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "6|l37FFPc0MqOI48AqMom34dCwW5eQS04ObOqm3jLN"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"url": "{{host}}/api/store/auth/logout"
+					},
+					"response": []
+				},
+				{
+					"name": "找回密码",
+					"id": "de232d9b-4c03-480c-840c-f2331923881e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mobile",
+									"value": "15138674502",
+									"type": "text"
+								},
+								{
+									"key": "verify_code",
+									"value": "888888",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "000000",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{host}}/api/store/auth/reset-password"
+					},
+					"response": []
+				},
+				{
+					"name": "注销",
+					"id": "73607c50-fd42-4c09-96a3-b7f3afc18034",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "1|RSOmkqGOC988759TErPKxvjuLHXMZkEr9bCvHUEG"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "password",
+									"value": "888888",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{host}}/api/store/auth/destroy"
+					},
+					"response": []
+				}
+			],
+			"id": "b67309ad-4ad1-43d7-add9-36bf1cb1ffae"
+		},
+		{
+			"name": "项目",
+			"item": [
+				{
+					"name": "规格",
+					"item": [
+						{
+							"name": "列表",
+							"id": "cb1ada23-d816-49ce-bcdd-b26abfb6a45b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{host}}/api/store/product/spec/list"
+							},
+							"response": []
+						},
+						{
+							"name": "修改",
+							"id": "4b05900f-659e-4ed5-b1d1-b282602efb16",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"尺码\",\r\n    \"values\": [\r\n        \"XL\", \"XXL\", \"XXXL\"\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{host}}/api/store/product/spec/form"
+							},
+							"response": []
+						}
+					],
+					"id": "603e33c0-01b7-4a99-ba7e-a3dbe2ffc6a1"
+				},
+				{
+					"name": "分类",
+					"item": [
+						{
+							"name": "列表",
+							"id": "c87b87d6-d6fe-4f2d-86f3-0c39da78a116",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{host}}/api/store/product/category/list"
+							},
+							"response": []
+						},
+						{
+							"name": "修改",
+							"id": "3706a44f-31f6-4ba0-9c0f-d9729913232f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"衣服\",\r\n    \"sort\": \"30\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{host}}/api/store/product/category/form"
+							},
+							"response": []
+						},
+						{
+							"name": "删除",
+							"id": "565d5615-95ea-419b-b2bc-6ac9dc51dc41",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"尺码\",\r\n    \"values\": [\r\n        \"XL\", \"XXL\", \"XXXL\"\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{host}}/api/store/product/category/destroy"
+							},
+							"response": []
+						}
+					],
+					"id": "5e330389-771b-4d71-b484-9304da49fb3b"
+				},
+				{
+					"name": "列表",
+					"id": "f30799b7-ecac-49d9-bf84-1c5e1a108553",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/store/product/list?type=&category=&keyword&withs=commissionConfig",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"store",
+								"product",
+								"list"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "",
+									"description": "1 服务项目 2 实物商品"
+								},
+								{
+									"key": "category",
+									"value": "",
+									"description": "分类ID"
+								},
+								{
+									"key": "keyword",
+									"value": null,
+									"description": "搜索词"
+								},
+								{
+									"key": "withs",
+									"value": "commissionConfig"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "商品单位",
+					"id": "387aaa93-d73b-4f79-bc1c-e0f3817a6fc9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{host}}/api/store/product/units"
+					},
+					"response": []
+				},
+				{
+					"name": "编辑",
+					"id": "104c78f5-9bf7-4a5f-89bd-796baaa64ef1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2,\r\n    \"category_id\": 1, // 分类ID\r\n    \"type\": 1, // 1 服务项目 2 实物商品\r\n    \"name\": \"金鸡奖2\", // 项目名称\r\n    \"unit\": \"个\", // 单位\r\n    \"subtitle\": \"急急急急\", // 副标题\r\n    \"first_image\": \"\", // 首图 一张\r\n    \"bar_code\": \"\", // 条码\r\n    \"price\": \"798\", // 价格\r\n    \"original_price\": \"998\", // 划线价 （微商城）\r\n    \"member_price\": \"598\", // 会员价\r\n    \"stock\": 0, // TODO 初始库存 （实物）\r\n    \"cost_price\": \"100\", // 成本价\r\n    \"duration\": \"120\", // 服务时长 分钟 （预约）\r\n    \"stock_warn\": 0, // TODO 预警值 （实物）\r\n    \"flag\": 1, // 是否上架 1 上架 0 下架\r\n    \"spec_type\": 1,  // 多规格 1 是 0 否 TODO 多规格需填写规格\r\n    \"specs\": [], // 规格内容 TODO\r\n    \"images\": [\r\n        {\r\n            \"image\": \"/a.jpg\",\r\n            \"sort\": 30\r\n        }\r\n    ],\r\n    \"content\": \"\" // 商品详情 （微商城）\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{host}}/api/store/product/form"
+					},
+					"response": []
+				},
+				{
+					"name": "删除",
+					"id": "763495d8-a8d1-437e-8c35-6f4518460a63",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{host}}/api/store/product/destroy"
+					},
+					"response": []
+				}
+			],
+			"id": "ff6548ae-dfbe-42d9-99b5-406cff624bdf"
+		},
+		{
+			"name": "会员",
+			"item": [
+				{
+					"name": "等级",
+					"item": [
+						{
+							"name": "列表",
+							"id": "26d53cdf-d3c5-4390-8e34-671c86351b29",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{host}}/api/store/member/level/list"
+							},
+							"response": []
+						},
+						{
+							"name": "详情",
+							"id": "aff9211f-9387-4d9a-84ec-5216ed77c56c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/api/store/member/level/detail?id=1",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"store",
+										"member",
+										"level",
+										"detail"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "修改",
+							"id": "322f68e2-faa3-43a1-b80c-aeec66ea7ee9",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"尺码\",\r\n    \"flag\": 0, // 0 无折扣 1 有折扣\r\n    \"discount\": 0.1, // 折扣 0.1-9.9\r\n    \"item_limit\": 1, // 折扣限制 0 无限制 1 限制（指定商品项目ID，如下）\r\n    \"service_ids\": [\r\n        1,\r\n        2,\r\n        3\r\n    ],\r\n    \"product_ids\": [\r\n        4,\r\n        5,\r\n        6\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{host}}/api/store/member/level/form"
+							},
+							"response": []
+						},
+						{
+							"name": "删除",
+							"id": "ddd79369-d17f-44f4-b50c-4877231be9e1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"尺码\",\r\n    \"values\": [\r\n        \"XL\", \"XXL\", \"XXXL\"\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{host}}/api/store/member/level/destroy"
+							},
+							"response": []
+						}
+					],
+					"id": "014a0dff-bf7c-40e6-82e7-b1c0ed1c7a50"
+				},
+				{
+					"name": "列表",
+					"id": "cf0b7669-51d7-47e9-b8b1-a257b5f3e4b7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/store/member/list?words=11&mobile",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"store",
+								"member",
+								"list"
+							],
+							"query": [
+								{
+									"key": "words",
+									"value": "11"
+								},
+								{
+									"key": "mobile",
+									"value": null,
+									"type": "text"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "修改",
+					"id": "04d62c6a-7c73-496a-aea8-d2b841109c52",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "张三",
+									"description": "姓名",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"value": "",
+									"description": "头像",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "1",
+									"description": "性别 0 未知 1 男 2 女",
+									"type": "text"
+								},
+								{
+									"key": "number",
+									"value": "",
+									"description": "卡号",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "13800138000",
+									"description": "手机",
+									"type": "text"
+								},
+								{
+									"key": "birthday",
+									"value": "2023-12-12",
+									"description": "生日",
+									"type": "text"
+								},
+								{
+									"key": "level_id",
+									"value": "0",
+									"description": "等级ID",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{host}}/api/store/member/form"
+					},
+					"response": []
+				},
+				{
+					"name": "删除",
+					"id": "7d45954e-0d0b-42f4-9c72-f485d6661464",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{host}}/api/store/member/level/destroy"
+					},
+					"response": []
+				}
+			],
+			"id": "a7e7a727-fb33-4bef-9b8f-43038fee869a"
+		},
+		{
+			"name": "卡片",
+			"item": [
+				{
+					"name": "列表",
+					"id": "a470c68e-d424-43aa-b7f0-e5b7219b9388",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/store/card/list?keyword",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"store",
+								"card",
+								"list"
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": null,
+									"description": "搜索词"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "详情",
+					"id": "8ba4d5fb-f7a7-4e48-a7c7-c2b5a6788932",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/store/card/detail?id=1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"store",
+								"card",
+								"detail"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "编辑",
+					"id": "916d2eff-9782-4050-b601-679d1b32fdd9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"type\": 1, // 1 次卡 2 时长卡（卡片内项目有效期内不限次）\r\n    \"name\": \"金鸡奖\", // 卡片名称\r\n    \"price\": \"798\", // 价格\r\n    \"valid_type\": 1, // 1 永久 2 限时（购买后多少天）\r\n    \"valid_days\": \"\", // 有效期：购买后多少天\r\n    \"remark\": \"\",\r\n    \"services\": [ // 卡片内项目\r\n        {\r\n            \"product_id\": 1,\r\n            \"number_type\": 1, // 1 限次 2 不限次\r\n            \"number\": 1\r\n        }\r\n    ],\r\n    \"gifts\": [ // 卡片赠送项目\r\n        {\r\n            \"product_id\": 2,\r\n            \"number_type\": 1, // 1 限次 2 不限次\r\n            \"number\": 1\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{host}}/api/store/card/form"
+					},
+					"response": []
+				},
+				{
+					"name": "删除",
+					"id": "9d5cff2a-5589-4938-9c2f-da19aeab1cb5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{host}}/api/store/product/destroy"
+					},
+					"response": []
+				}
+			],
+			"id": "a5fc79cb-1cce-408a-8772-84873a58f371"
+		},
+		{
+			"name": "员工",
+			"item": [
+				{
+					"name": "列表",
+					"id": "cb10e4c5-a30c-4190-8404-0bef4a4018fc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/store/staff/list?keyword",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"store",
+								"staff",
+								"list"
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": null,
+									"description": "搜索词"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "详情",
+					"id": "b8101ee1-49a9-4d6f-b6eb-2acf48212ac6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/store/staff/detail?id=1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"store",
+								"staff",
+								"detail"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "编辑",
+					"id": "17873588-7786-4ba6-9d41-8c510905a70d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3,\r\n    \"name\": \"金鸡奖\", // 卡片名称\r\n    \"avatar\": \"\",\r\n    \"mobile\": \"13800138000\",\r\n    \"status\": \"0\", // 0 正常 1 禁用 2 注销\r\n    \"job_id\": 1,\r\n    \"password\": 123456,\r\n    \"remark\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{host}}/api/store/staff/form"
+					},
+					"response": []
+				},
+				{
+					"name": "设置权限",
+					"id": "cb9cfb89-c70e-40c5-bf44-e7d52425c2ac",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": 2,\r\n    \"permissions\": [ // 菜单ID\r\n        1,\r\n        2\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{host}}/api/store/staff/permission"
+					},
+					"response": []
+				},
+				{
+					"name": "删除",
+					"id": "65d60ef4-f401-4623-8cf8-20ebba5912f8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{host}}/api/store/staff/destroy"
+					},
+					"response": []
+				}
+			],
+			"id": "4c596478-1b5d-4917-a83f-65104455ee06"
+		},
+		{
+			"name": "岗位",
+			"item": [
+				{
+					"name": "列表",
+					"id": "0acc1e33-5188-46f0-a9c9-5f48aff2e9ad",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{host}}/api/store/job/list"
+					},
+					"response": []
+				},
+				{
+					"name": "编辑",
+					"id": "0e5c6ce3-c922-4815-95fa-00e83328e301",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "店长",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/api/store/job/form",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"store",
+								"job",
+								"form"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"type": "text",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "删除",
+					"id": "1bae581a-7393-4905-bb3a-72fb812d46b8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{host}}/api/store/job/destroy"
+					},
+					"response": []
+				}
+			],
+			"id": "f495162d-bd10-42f9-ba06-5c3d1b8010e5"
+		},
+		{
+			"name": "菜单",
+			"item": [
+				{
+					"name": "列表",
+					"id": "ae557aa7-cb4c-4645-9937-ff2b859f4fcb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{host}}/api/store/menu/list",
+						"description": "菜单即权限，获取（设置）员工权限即获取（设置）菜单权限"
+					},
+					"response": []
+				},
+				{
+					"name": "编辑",
+					"id": "9e66c4c7-696b-41d6-bfb0-fac366e34cf5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "parent_id",
+									"value": "0",
+									"type": "text",
+									"description": "上级ID"
+								},
+								{
+									"key": "sort",
+									"value": "1",
+									"type": "text",
+									"description": "排序值 正序"
+								},
+								{
+									"key": "name",
+									"value": "员工",
+									"type": "text",
+									"description": "名称"
+								},
+								{
+									"key": "icon",
+									"value": "",
+									"type": "text",
+									"description": "图标"
+								},
+								{
+									"key": "uri",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "1",
+									"type": "text",
+									"description": "0:目录,1:菜单,2:按钮"
+								},
+								{
+									"key": "permission",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "visible",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/api/store/menu/form",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"store",
+								"menu",
+								"form"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"type": "text",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "删除",
+					"id": "d23c486c-c7e5-4bd7-b7ac-9495990bc44f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{host}}/api/store/menu/destroy"
+					},
+					"response": []
+				}
+			],
+			"id": "2aaee7aa-ca3d-44bb-9429-f7aca1a8427c"
+		},
+		{
+			"name": "提成设置",
+			"item": [
+				{
+					"name": "编辑",
+					"id": "b5d2e5ee-2d8d-4acf-aa9d-dd1193f43a52",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"configurable_ids\": [ // 商品项目、卡片ID数组\r\n        1,2\r\n    ],\r\n    \"configurable_type\": 1, // 1:服务 2:商品 3:快速消费 4:办卡 5:储值卡\r\n    \"configs\": [ // 每个岗位一条\r\n        {\r\n            \"job_id\": 1,\r\n            \"type\": 1, // 计算方式 1:固定金额 2:百分比\r\n            \"deduct_cost\": 0, // 是否扣除成本后计算 1:扣除 0:不扣除\r\n            \"rate\": 98.00, // 百分比\r\n            \"fixed_amount\": 998.00 // 固定金额\r\n        },\r\n        {\r\n            \"job_id\": 2,\r\n            \"type\": 1, // 计算方式 1:固定金额 2:百分比\r\n            \"deduct_cost\": 0, // 是否扣除成本后计算 1:扣除 0:不扣除\r\n            \"rate\": 98.00, // 百分比\r\n            \"fixed_amount\": 998.00 // 固定金额\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{host}}/api/store/commission/form",
+						"description": "提成设置参照云管"
+					},
+					"response": []
+				},
+				{
+					"name": "详情",
+					"id": "6c3d8efe-3ec0-4e8c-a3f5-763cb7f68b3b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": "{{host}}/api/store/commission/detail"
+					},
+					"response": []
+				}
+			],
+			"id": "b7c55b4c-f8de-437f-9d42-133fd6c02588"
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": {
+			"token": "{{token}}"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "c558e5a8-c4ee-45de-919f-fb239d640626",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "bf07b01b-ec04-4983-9877-86a90fcbdd07",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "http://127.0.0.1:8000"
+		}
+	]
+}
