@@ -861,7 +861,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\": 3,\r\n    \"name\": \"金鸡奖\", // 卡片名称\r\n    \"avatar\": \"\",\r\n    \"mobile\": \"13800138000\",\r\n    \"status\": \"0\", // 0 正常 1 禁用 2 注销\r\n    \"job_id\": 1,\r\n    \"password\": 123456,\r\n    \"remark\": \"\"\r\n}",
+							"raw": "{\r\n    \"id\": \"\",\r\n    \"name\": \"金鸡奖\", // 卡片名称\r\n    \"avatar\": \"\",\r\n    \"mobile\": \"13800138000\",\r\n    \"status\": \"0\", // 0 正常 1 禁用 2 注销\r\n    \"job_id\": 1,\r\n    \"password\": 123456,\r\n    \"remark\": \"\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1173,7 +1173,28 @@
 							"mode": "formdata",
 							"formdata": []
 						},
-						"url": "{{host}}/api/store/commission/detail"
+						"url": {
+							"raw": "{{host}}/api/store/commission/detail?configurable_id=1&configurable_type=1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"store",
+								"commission",
+								"detail"
+							],
+							"query": [
+								{
+									"key": "configurable_id",
+									"value": "1"
+								},
+								{
+									"key": "configurable_type",
+									"value": "1"
+								}
+							]
+						}
 					},
 					"response": []
 				}
