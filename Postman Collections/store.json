@@ -392,7 +392,89 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"id": "a695b26d-43f0-4290-a282-c15cbd2c636d",
+							"name": "列表",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/api/store/product/list?type=&category=&keyword",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"store",
+										"product",
+										"list"
+									],
+									"query": [
+										{
+											"key": "type",
+											"value": "",
+											"description": "1 服务项目 2 实物商品"
+										},
+										{
+											"key": "category",
+											"value": "",
+											"description": "分类ID"
+										},
+										{
+											"key": "keyword",
+											"value": null,
+											"description": "搜索词"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.18.0 (Ubuntu)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 09 Apr 2024 02:12:13 GMT"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "10000"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "9999"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"code\": 0,\n    \"msg\": \"OK\",\n    \"data\": {\n        \"current_page\": 1,\n        \"data\": [\n            {\n                \"id\": 1,\n                \"store_id\": 1,\n                \"category_id\": 1,\n                \"type\": 1,\n                \"name\": \"金鸡奖\",\n                \"unit\": \"个\",\n                \"subtitle\": \"急急急急\",\n                \"first_image\": null,\n                \"bar_code\": null,\n                \"price\": \"798.00\",\n                \"original_price\": \"998.00\",\n                \"member_price\": \"598.00\",\n                \"stock\": 0,\n                \"stock_warn\": 0,\n                \"flag\": 1,\n                \"spec_type\": \"1\",\n                \"commission_config\": 0\n            },\n            {\n                \"id\": 2,\n                \"store_id\": 1,\n                \"category_id\": 1,\n                \"type\": 1,\n                \"name\": \"金鸡奖2\",\n                \"unit\": \"个\",\n                \"subtitle\": \"急急急急\",\n                \"first_image\": null,\n                \"bar_code\": null,\n                \"price\": \"798.00\",\n                \"original_price\": \"998.00\",\n                \"member_price\": \"598.00\",\n                \"stock\": 0,\n                \"stock_warn\": 0,\n                \"flag\": 1,\n                \"spec_type\": \"1\",\n                \"commission_config\": 0\n            }\n        ],\n        \"first_page_url\": \"http://store.com/api/store/product/list?page=1\",\n        \"from\": 1,\n        \"next_page_url\": null,\n        \"path\": \"http://store.com/api/store/product/list\",\n        \"per_page\": 10,\n        \"prev_page_url\": null,\n        \"to\": 2\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "商品单位",
