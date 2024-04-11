@@ -1317,7 +1317,7 @@
 								}
 							}
 						},
-						"url": "{{host}}/api/store/commission/calc",
+						"url": "{{host}}/api/store/member-card/open",
 						"description": "提成设置参照云管"
 					},
 					"response": []
