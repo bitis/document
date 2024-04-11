@@ -1283,7 +1283,7 @@
 			"name": "办卡",
 			"item": [
 				{
-					"name": "编辑",
+					"name": "办卡",
 					"id": "a6a9d9f2-c6aa-4341-b26a-6cd233237240",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1309,10 +1309,10 @@
 			"id": "a09d6490-aaa7-4136-b6e0-c52f3cc4f46d"
 		},
 		{
-			"name": "提成计算 Copy",
+			"name": "提成计算",
 			"item": [
 				{
-					"name": "编辑",
+					"name": "计算",
 					"id": "bde4c76e-8a93-4efb-8bf8-cebc3da27170",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
