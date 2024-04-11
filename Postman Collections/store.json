@@ -1304,44 +1304,6 @@
 						"description": "提成设置参照云管"
 					},
 					"response": []
-				},
-				{
-					"name": "详情",
-					"id": "efd28443-6d16-45e2-b742-1ac7913506d9",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "formdata",
-							"formdata": []
-						},
-						"url": {
-							"raw": "{{host}}/api/store/commission/detail?configurable_id=1&configurable_type=1",
-							"host": [
-								"{{host}}"
-							],
-							"path": [
-								"api",
-								"store",
-								"commission",
-								"detail"
-							],
-							"query": [
-								{
-									"key": "configurable_id",
-									"value": "1"
-								},
-								{
-									"key": "configurable_type",
-									"value": "1"
-								}
-							]
-						}
-					},
-					"response": []
 				}
 			],
 			"id": "a09d6490-aaa7-4136-b6e0-c52f3cc4f46d"
