@@ -1280,7 +1280,7 @@
 			"id": "b7c55b4c-f8de-437f-9d42-133fd6c02588"
 		},
 		{
-			"name": "提成计算",
+			"name": "办卡",
 			"item": [
 				{
 					"name": "编辑",
@@ -1293,20 +1293,49 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"configurable_ids\": [ // 商品项目、卡片ID数组\r\n        1,2\r\n    ],\r\n    \"configurable_type\": 1, // 1:服务 2:商品 3:快速消费 4:办卡 5:储值卡\r\n    \"configs\": [ // 每个岗位一条\r\n        {\r\n            \"job_id\": 1,\r\n            \"type\": 1, // 计算方式 1:固定金额 2:百分比\r\n            \"deduct_cost\": 0, // 是否扣除成本后计算 1:扣除 0:不扣除\r\n            \"rate\": 98.00, // 百分比\r\n            \"fixed_amount\": 998.00 // 固定金额\r\n        },\r\n        {\r\n            \"job_id\": 2,\r\n            \"type\": 1, // 计算方式 1:固定金额 2:百分比\r\n            \"deduct_cost\": 0, // 是否扣除成本后计算 1:扣除 0:不扣除\r\n            \"rate\": 98.00, // 百分比\r\n            \"fixed_amount\": 998.00 // 固定金额\r\n        }\r\n    ]\r\n}",
+							"raw": "",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": "{{host}}/api/store/commission/form",
+						"url": "{{host}}/api/store/commission/calc",
 						"description": "提成设置参照云管"
 					},
 					"response": []
 				}
 			],
 			"id": "a09d6490-aaa7-4136-b6e0-c52f3cc4f46d"
+		},
+		{
+			"name": "提成计算 Copy",
+			"item": [
+				{
+					"name": "编辑",
+					"id": "bde4c76e-8a93-4efb-8bf8-cebc3da27170",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{host}}/api/store/commission/calc",
+						"description": "提成设置参照云管"
+					},
+					"response": []
+				}
+			],
+			"id": "7993a54a-528b-4687-a41b-1ca5b2ea6cb4"
 		}
 	],
 	"auth": {
