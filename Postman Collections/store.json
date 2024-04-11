@@ -657,7 +657,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{host}}/api/store/member/list?words=11&mobile",
+							"raw": "{{host}}/api/store/member/list?words=&mobile",
 							"host": [
 								"{{host}}"
 							],
@@ -670,12 +670,11 @@
 							"query": [
 								{
 									"key": "words",
-									"value": "11"
+									"value": ""
 								},
 								{
 									"key": "mobile",
-									"value": null,
-									"type": "text"
+									"value": null
 								}
 							]
 						}
