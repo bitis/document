@@ -1293,7 +1293,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "",
+							"raw": "{\r\n    \"member_id\": 1,\r\n    \"card_id\": 2,\r\n    \"pay_amount\": 998.00,\r\n    \"payment_type\": 1, \r\n    \"remark\": \"\",\r\n    \"staffs\": [\r\n        {\r\n            \"id\": 1,\r\n            \"performance\": 998.00,\r\n            \"commission\": 9.98\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
