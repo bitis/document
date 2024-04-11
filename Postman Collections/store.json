@@ -682,7 +682,26 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{host}}/api/store/member/card/list"
+								"url": {
+									"raw": "{{host}}/api/store/member/card/list?member_id=1",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"store",
+										"member",
+										"card",
+										"list"
+									],
+									"query": [
+										{
+											"key": "member_id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								}
 							},
 							"response": []
 						},
