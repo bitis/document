@@ -75,6 +75,23 @@
 						"url": "{{host}}/api/common/industry"
 					},
 					"response": []
+				},
+				{
+					"name": "config",
+					"id": "f8326919-1b3a-4d0b-8cbe-52c52855f739",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": "{{host}}/api/common/config"
+					},
+					"response": []
 				}
 			],
 			"id": "2e916061-d1e4-4d73-b605-13ac0bbee9bf"
@@ -1293,7 +1310,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"member_id\": 1,\r\n    \"card_id\": 2,\r\n    \"pay_amount\": 998.00,\r\n    \"payment_type\": 1, \r\n    \"remark\": \"\",\r\n    \"staffs\": [\r\n        {\r\n            \"id\": 1,\r\n            \"performance\": 998.00,\r\n            \"commission\": 9.98\r\n        }\r\n    ]\r\n}",
+							"raw": "{\r\n    \"member_id\": 1,\r\n    \"card_id\": 2,\r\n    \"pay_amount\": 998.00,\r\n    \"payment_type\": 1, // 支付方式 （见：通用 config）\r\n    \"remark\": \"\",\r\n    \"staffs\": [\r\n        {\r\n            \"id\": 1,\r\n            \"performance\": 998.00, // 业绩\r\n            \"commission\": 9.98 // 提成\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
