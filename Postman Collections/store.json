@@ -651,6 +651,29 @@
 					"name": "卡片",
 					"item": [
 						{
+							"name": "办卡",
+							"id": "a6a9d9f2-c6aa-4341-b26a-6cd233237240",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"member_id\": 1,\r\n    \"card_id\": 1,\r\n    \"pay_amount\": 998.00, // 实际支付金额\r\n    \"payment_type\": 1, // 支付方式 （见：通用.config.payment_types）\r\n    \"remark\": \"\",\r\n    \"staffs\": [\r\n        {\r\n            \"id\": 1,\r\n            \"performance\": 998.00, // 业绩\r\n            \"commission\": 9.98 // 提成\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{host}}/api/store/member/card/open",
+								"description": "提成设置参照云管"
+							},
+							"response": []
+						},
+						{
 							"name": "列表",
 							"id": "b86422be-2c32-4bc4-8117-c32799b75e9e",
 							"protocolProfileBehavior": {
@@ -1388,35 +1411,6 @@
 				}
 			],
 			"id": "b7c55b4c-f8de-437f-9d42-133fd6c02588"
-		},
-		{
-			"name": "办卡",
-			"item": [
-				{
-					"name": "办卡",
-					"id": "a6a9d9f2-c6aa-4341-b26a-6cd233237240",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"member_id\": 1,\r\n    \"card_id\": 1,\r\n    \"pay_amount\": 998.00, // 实际支付金额\r\n    \"payment_type\": 1, // 支付方式 （见：通用.config.payment_types）\r\n    \"remark\": \"\",\r\n    \"staffs\": [\r\n        {\r\n            \"id\": 1,\r\n            \"performance\": 998.00, // 业绩\r\n            \"commission\": 9.98 // 提成\r\n        }\r\n    ]\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{host}}/api/store/member-card/open",
-						"description": "提成设置参照云管"
-					},
-					"response": []
-				}
-			],
-			"id": "a09d6490-aaa7-4136-b6e0-c52f3cc4f46d"
 		},
 		{
 			"name": "提成计算",
