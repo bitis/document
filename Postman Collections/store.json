@@ -1508,7 +1508,7 @@
 							}
 						},
 						"url": "{{host}}/api/store/commission/calc",
-						"description": "总共5种需要计算提成的类型：\n\n办卡：open-card\n\n消费（商品）：consume\n\n消费（输金额）：fast-consume\n\n快速充次：fast-times\n\n快速充值：fast-stored"
+						"description": "总共5种需要计算提成的类型：\n\n| **类型** | **标识** |\n| --- | --- |\n| 办卡 | open-card |\n| 消费（商品） | consume |\n| 消费（输金额） | fast-consume |\n| 快速充次 | fast-times |\n| 快速充值 | fast-stored |\n\n后三种目前参数格式一样"
 					},
 					"response": [
 						{
