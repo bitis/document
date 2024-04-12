@@ -818,7 +818,7 @@
 					"response": []
 				},
 				{
-					"name": "列表 Copy",
+					"name": "余额流水",
 					"id": "010ba173-dd2e-433b-a94e-00298bf74651",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
