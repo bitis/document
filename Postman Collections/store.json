@@ -1533,6 +1533,29 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": null
+						},
+						{
+							"id": "840c30e7-ebb1-4c8e-b662-a5b65625c3d9",
+							"name": "消费",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"member_id\": 1,\r\n    \"type\": \"consume\",\r\n    \"products\": [\r\n        {\r\n            \"id\": 1,\r\n            \"price\": 998.00,\r\n            \"staffs\": [\r\n                {\r\n                    \"id\": 2\r\n                },\r\n                {\r\n                    \"id\": 3\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{host}}/api/store/commission/calc"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
 						}
 					]
 				}
