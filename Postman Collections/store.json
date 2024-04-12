@@ -1519,7 +1519,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"type\": \"open_card\",\r\n    \"card\": {\r\n        \"id\": 1,\r\n        \"price\": 998.00\r\n    }\r\n}",
+									"raw": "{\r\n    \"member_id\": 1,\r\n    \"type\": \"open_card\",\r\n    \"card\": {\r\n        \"id\": 1,\r\n        \"price\": 998.00\r\n    },\r\n    \"staffs\": [\r\n        {\r\n            \"id\": 1\r\n        }\r\n    ]\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
