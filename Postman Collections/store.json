@@ -1519,7 +1519,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"member_id\": 1,\r\n    \"type\": \"open_card\",\r\n    \"card\": {\r\n        \"id\": 1,\r\n        \"price\": 998.00\r\n    },\r\n    \"staffs\": [\r\n        {\r\n            \"id\": 1\r\n        }\r\n    ]\r\n}",
+									"raw": "{\r\n    \"member_id\": 1,\r\n    \"type\": \"open_card\",\r\n    \"card\": {\r\n        \"id\": 1,\r\n        \"price\": 998.00\r\n    },\r\n    \"staffs\": [\r\n        {\r\n            \"id\": 2\r\n        },\r\n        {\r\n            \"id\": 3\r\n        }\r\n    ]\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1535,28 +1535,6 @@
 							"body": null
 						}
 					]
-				},
-				{
-					"name": "{{host}}/api/store/commission/calc",
-					"id": "66e4bbbb-d141-4b61-98ae-7d47d446bee8",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"member_id\": 1,\r\n    \"type\": \"open_card\",\r\n    \"card\": {\r\n        \"id\": 1,\r\n        \"price\": 998.00\r\n    },\r\n    \"staffs\": [\r\n        {\r\n            \"id\": 2\r\n        }\r\n    ]\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{host}}/api/store/commission/calc"
-					},
-					"response": []
 				}
 			],
 			"id": "7993a54a-528b-4687-a41b-1ca5b2ea6cb4"
