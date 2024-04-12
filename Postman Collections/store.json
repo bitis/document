@@ -1519,7 +1519,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"member_id\": 1,\r\n    \"type\": \"open\",\r\n    \"card\": {\r\n        \"id\": 1,\r\n        \"price\": 998.00\r\n    },\r\n    \"staffs\": [\r\n        {\r\n            \"id\": 2\r\n        },\r\n        {\r\n            \"id\": 3\r\n        }\r\n    ]\r\n}",
+									"raw": "{\r\n    \"member_id\": 1,\r\n    \"type\": \"open-card\",\r\n    \"card\": {\r\n        \"id\": 1,\r\n        \"price\": 998.00\r\n    },\r\n    \"staffs\": [\r\n        {\r\n            \"id\": 2\r\n        },\r\n        {\r\n            \"id\": 3\r\n        }\r\n    ]\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1559,7 +1559,7 @@
 						},
 						{
 							"id": "58dc6c0c-a30e-4c58-b632-fb7163de1b68",
-							"name": "消费 Copy",
+							"name": "快速消费",
 							"originalRequest": {
 								"method": "POST",
 								"header": [],
