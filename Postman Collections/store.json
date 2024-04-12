@@ -818,6 +818,37 @@
 					"response": []
 				},
 				{
+					"name": "列表 Copy",
+					"id": "010ba173-dd2e-433b-a94e-00298bf74651",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/store/member/transaction?member_id=1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"store",
+								"member",
+								"transaction"
+							],
+							"query": [
+								{
+									"key": "member_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "修改",
 					"id": "04d62c6a-7c73-496a-aea8-d2b841109c52",
 					"protocolProfileBehavior": {
