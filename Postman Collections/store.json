@@ -1510,7 +1510,31 @@
 						"url": "{{host}}/api/store/commission/calc",
 						"description": "提成设置参照云管"
 					},
-					"response": []
+					"response": [
+						{
+							"id": "741b0fac-dd9f-4dfe-a2c3-a48494724435",
+							"name": "办卡",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"type\": \"open_card\",\r\n    \"card\": {\r\n        \"id\": 1,\r\n        \"price\": 998.00\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{host}}/api/store/commission/calc"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						}
+					]
 				}
 			],
 			"id": "7993a54a-528b-4687-a41b-1ca5b2ea6cb4"
