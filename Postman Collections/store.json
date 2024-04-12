@@ -1433,7 +1433,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"configurable_ids\": [ // 商品项目、卡片ID数组\r\n        1,2\r\n    ],\r\n    \"configurable_type\": 1, // 1:服务 2:商品 3:快速消费 4:办卡 5:储值卡\r\n    \"configs\": [ // 每个岗位一条\r\n        {\r\n            \"job_id\": 1,\r\n            \"type\": 1, // 计算方式 1:固定金额 2:百分比\r\n            \"deduct_cost\": 0, // 是否扣除成本后计算 1:扣除 0:不扣除\r\n            \"rate\": 98.00, // 百分比\r\n            \"fixed_amount\": 998.00 // 固定金额\r\n        },\r\n        {\r\n            \"job_id\": 2,\r\n            \"type\": 1, // 计算方式 1:固定金额 2:百分比\r\n            \"deduct_cost\": 0, // 是否扣除成本后计算 1:扣除 0:不扣除\r\n            \"rate\": 98.00, // 百分比\r\n            \"fixed_amount\": 998.00 // 固定金额\r\n        }\r\n    ]\r\n}",
+							"raw": "{\r\n    \"configurable_ids\": [ // 商品项目、卡片ID数组\r\n        1,2\r\n    ],\r\n    \"configurable_type\": 1, // 1:服务 2:商品 3:快速消费 4:办卡 5:储值卡\r\n    \"configs\": [ // 每个岗位一条\r\n        {\r\n            \"job_id\": 1,\r\n            \"type\": 1, // 计算方式 1:固定金额 2:百分比\r\n            \"share_out\": 1, // 一个商品多人提成时计算方式，是否分摊提成：1是 0否\r\n            \"deduct_cost\": 0, // 是否扣除成本后计算 1:扣除 0:不扣除\r\n            \"rate\": 98.00, // 百分比\r\n            \"fixed_amount\": 998.00 // 固定金额\r\n        },\r\n        {\r\n            \"job_id\": 2,\r\n            \"type\": 1, // 计算方式 1:固定金额 2:百分比\r\n            \"deduct_cost\": 0, // 是否扣除成本后计算 1:扣除 0:不扣除\r\n            \"rate\": 98.00, // 百分比\r\n            \"fixed_amount\": 998.00 // 固定金额\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
