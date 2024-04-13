@@ -1599,7 +1599,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"member_id\": 1,\r\n    \"pay_amount\": 998.00,\r\n    \"total_amount\": 1000.00,\r\n    \"deduct_amount\": 2.00,\r\n    \"remark\": \"\",\r\n    \"staffs\": [\r\n        {\r\n            \"id\":1,\r\n            \"performance\": 998.00,\r\n            \"commission\": 99.80\r\n        }\r\n    ]\r\n}",
+							"raw": "{\r\n    \"member_id\": 1,\r\n    \"pay_amount\": 998.00,\r\n    \"total_amount\": 1000.00,\r\n    \"deduct_amount\": 2.00,\r\n    \"remark\": \"\",\r\n    \"payment_type\": 1,\r\n    \"staffs\": [\r\n        {\r\n            \"id\":1,\r\n            \"performance\": 998.00,\r\n            \"commission\": 99.80\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
