@@ -1606,7 +1606,7 @@
 								}
 							}
 						},
-						"url": "{{host}}/api/store/consume/calc",
+						"url": "{{host}}/api/store/consume/fast",
 						"description": "输入金额结账"
 					},
 					"response": []
