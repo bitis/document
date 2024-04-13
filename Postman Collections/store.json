@@ -795,7 +795,58 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{host}}/api/store/member/order/list"
+								"url": {
+									"raw": "{{host}}/api/store/member/order/list?member_id=1",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"store",
+										"member",
+										"order",
+										"list"
+									],
+									"query": [
+										{
+											"key": "member_id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "订单详情",
+							"id": "659e6322-fbeb-4270-adb3-6a5cd6d508de",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/api/store/member/order/detail?id=8",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"store",
+										"member",
+										"order",
+										"detail"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "8",
+											"type": "text"
+										}
+									]
+								}
 							},
 							"response": []
 						}
