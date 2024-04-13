@@ -784,6 +784,25 @@
 					"id": "6a05de94-086e-45cf-a030-adea4dd73505"
 				},
 				{
+					"name": "订单记录",
+					"item": [
+						{
+							"name": "订单列表",
+							"id": "5664846f-2932-48eb-aa16-69eb000d6cb7",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{host}}/api/store/member/order/list"
+							},
+							"response": []
+						}
+					],
+					"id": "25fb21a1-fda3-4bb3-9ff9-b5488dd8acf9"
+				},
+				{
 					"name": "列表",
 					"id": "cf0b7669-51d7-47e9-b8b1-a257b5f3e4b7",
 					"protocolProfileBehavior": {
