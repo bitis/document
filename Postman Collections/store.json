@@ -796,7 +796,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{host}}/api/store/member/order/list?member_id=1",
+									"raw": "{{host}}/api/store/member/order/list?member_id=1&type",
 									"host": [
 										"{{host}}"
 									],
@@ -811,7 +811,12 @@
 										{
 											"key": "member_id",
 											"value": "1",
-											"type": "text"
+											"description": "会员ID"
+										},
+										{
+											"key": "type",
+											"value": null,
+											"description": "类型"
 										}
 									]
 								}
