@@ -846,7 +846,8 @@
 											"type": "text"
 										}
 									]
-								}
+								},
+								"description": "订单类型(type):"
 							},
 							"response": []
 						}
