@@ -1589,7 +1589,7 @@
 			"name": "消费",
 			"item": [
 				{
-					"name": "计算",
+					"name": "快捷收款",
 					"id": "e1002508-265c-4ca1-b18c-71c85f015649",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1606,7 +1606,8 @@
 								}
 							}
 						},
-						"url": "{{host}}/api/store/consume/calc"
+						"url": "{{host}}/api/store/consume/calc",
+						"description": "输入金额结账"
 					},
 					"response": []
 				}
