@@ -1584,6 +1584,34 @@
 				}
 			],
 			"id": "7993a54a-528b-4687-a41b-1ca5b2ea6cb4"
+		},
+		{
+			"name": "消费",
+			"item": [
+				{
+					"name": "计算",
+					"id": "e1002508-265c-4ca1-b18c-71c85f015649",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{host}}/api/store/consume/calc"
+					},
+					"response": []
+				}
+			],
+			"id": "0816f502-aee7-4cb1-819b-073544869952"
 		}
 	],
 	"auth": {
