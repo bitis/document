@@ -735,7 +735,79 @@
 								},
 								"description": "扣卡消费时展示会员有的产品"
 							},
-							"response": []
+							"response": [
+								{
+									"id": "7718fc49-473b-4f30-ba84-cc1f8337dbd5",
+									"name": "获取卡片项目 （扣卡用）",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/api/store/member/card/products?member_id=1",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"store",
+												"member",
+												"card",
+												"products"
+											],
+											"query": [
+												{
+													"key": "member_id",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.18.0 (Ubuntu)"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 17 Apr 2024 10:34:24 GMT"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "10000"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "9999"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"code\": 0,\n    \"msg\": \"OK\",\n    \"data\": {\n        \"1\": {\n            \"id\": 1,\n            \"store_id\": 1,\n            \"category_id\": 1,\n            \"type\": 1,\n            \"name\": \"金鸡奖\",\n            \"unit\": \"个\",\n            \"subtitle\": \"急急急急\",\n            \"first_image\": null,\n            \"bar_code\": null,\n            \"price\": \"798.00\",\n            \"original_price\": \"998.00\",\n            \"member_price\": \"598.00\",\n            \"stock\": 0,\n            \"stock_warn\": 0,\n            \"flag\": 1,\n            \"spec_type\": \"1\",\n            \"commission_config\": 0,\n            \"cards\": [\n                {\n                    \"id\": 2,\n                    \"member_id\": 1,\n                    \"store_id\": 1,\n                    \"type\": 1,\n                    \"card_id\": 1,\n                    \"card_name\": null,\n                    \"price\": \"998.00\",\n                    \"valid_type\": 1,\n                    \"valid_time\": null,\n                    \"product_id\": 1,\n                    \"number_type\": 1,\n                    \"origin_number\": 1,\n                    \"used_number\": 0,\n                    \"current_number\": 1,\n                    \"status\": 1\n                }\n            ]\n        },\n        \"2\": {\n            \"id\": 2,\n            \"store_id\": 1,\n            \"category_id\": 1,\n            \"type\": 1,\n            \"name\": \"金鸡奖2\",\n            \"unit\": \"个\",\n            \"subtitle\": \"急急急急\",\n            \"first_image\": null,\n            \"bar_code\": null,\n            \"price\": \"798.00\",\n            \"original_price\": \"998.00\",\n            \"member_price\": \"598.00\",\n            \"stock\": 0,\n            \"stock_warn\": 0,\n            \"flag\": 1,\n            \"spec_type\": \"1\",\n            \"commission_config\": 0,\n            \"cards\": [\n                {\n                    \"id\": 2,\n                    \"member_id\": 1,\n                    \"store_id\": 1,\n                    \"type\": 1,\n                    \"card_id\": 1,\n                    \"card_name\": null,\n                    \"price\": \"998.00\",\n                    \"valid_type\": 1,\n                    \"valid_time\": null,\n                    \"product_id\": 2,\n                    \"number_type\": 1,\n                    \"origin_number\": 1,\n                    \"used_number\": 0,\n                    \"current_number\": 1,\n                    \"status\": 1\n                }\n            ]\n        }\n    }\n}"
+								}
+							]
 						},
 						{
 							"name": "修改",
