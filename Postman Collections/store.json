@@ -706,8 +706,8 @@
 							"response": []
 						},
 						{
-							"name": "详情",
-							"id": "92cd7867-7952-4fa4-a2c5-c44680c007a5",
+							"name": "获取卡片项目 （扣卡用）",
+							"id": "863790ff-39ec-43ab-a136-5fe3fc0e82f3",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -715,7 +715,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{host}}/api/store/member/level/detail?id=1",
+									"raw": "{{host}}/api/store/member/card/products?member_id=1",
 									"host": [
 										"{{host}}"
 									],
@@ -723,12 +723,12 @@
 										"api",
 										"store",
 										"member",
-										"level",
-										"detail"
+										"card",
+										"products"
 									],
 									"query": [
 										{
-											"key": "id",
+											"key": "member_id",
 											"value": "1"
 										}
 									]
