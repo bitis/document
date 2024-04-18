@@ -1759,6 +1759,29 @@
 						"description": "输入金额结账"
 					},
 					"response": []
+				},
+				{
+					"name": "扣卡消费",
+					"id": "1efa22c3-b78d-4b9f-830d-1499a2687cd2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"type\": 1,\r\n        \"num\": 1,\r\n        \"price\": 99,\r\n        \"data\": {\r\n            \"mid\": 0,\r\n            \"priceType\": 1,\r\n            \"orderSendFlag\": false,\r\n            \"skuId\": 10,\r\n            \"serviceId\": 5,\r\n            \"useCard\": {\r\n                \"type\": 1,\r\n                \"cardId\": 467,\r\n                \"count\": 1,\r\n                \"totalCount\": 1,\r\n                \"useCardGiftFlag\": false\r\n            }\r\n        }\r\n    },\r\n    {\r\n        \"type\": 1,\r\n        \"num\": 1,\r\n        \"price\": 99,\r\n        \"itemRefStaffList\": [\r\n            {\r\n                \"sid\": 1,\r\n                \"type\": 1,\r\n                \"achievementScale\": 100\r\n            }\r\n        ],\r\n        \"data\": {\r\n            \"mid\": 0,\r\n            \"priceType\": 1,\r\n            \"orderSendFlag\": false,\r\n            \"skuId\": 12,\r\n            \"serviceId\": 6,\r\n            \"useCard\": {\r\n                \"type\": 1,\r\n                \"cardId\": 466,\r\n                \"count\": 1,\r\n                \"totalCount\": 1,\r\n                \"useCardGiftFlag\": false\r\n            }\r\n        }\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{host}}/api/store/consume/card",
+						"description": "输入金额结账"
+					},
+					"response": []
 				}
 			],
 			"id": "0816f502-aee7-4cb1-819b-073544869952"
