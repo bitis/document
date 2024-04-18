@@ -1778,7 +1778,7 @@
 								}
 							}
 						},
-						"url": "{{host}}/api/store/consume/card",
+						"url": "{{host}}/api/store/consume/normal",
 						"description": "输入金额结账"
 					},
 					"response": []
