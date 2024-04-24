@@ -1771,7 +1771,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"member_id\": 1,\r\n    \"products\": [\r\n        {\r\n            \"type\": 1,\r\n            \"num\": 1,\r\n            \"price\": 99,\r\n            \"itemRefStaffList\": []\r\n        }\r\n    ],\r\n    \"total_amount\"\r\n    \"deductions\":[],\r\n    \"payment_type\": 0, // 实际支付金额的支付方式\r\n    \"real_amount\": \"0.00\" // 实际支付金额 （扣卡不算）\r\n}",
+							"raw": "{\r\n    \"member_id\": 1,\r\n    \"products\": [\r\n        {\r\n            \"id\": 1,\r\n            \"num\": 1,\r\n            \"price\": 99, // 售价 可以手动修改\r\n            \"deduct_amount\": \"1\", // 手动修改减少的金额\r\n            \"itemRefStaffList\": []\r\n        }\r\n    ],\r\n    \"total_amount\": \"\", // 原价总价\r\n    \"deduct_amount\": \"\", // 抵扣总价\r\n    \"real_amount\": \"\", // 原价-抵扣\r\n    \"deductions\":[],\r\n    \"payment_type\": 0, // 实际支付金额的支付方式\r\n    \"pay_amount\": \"0.00\", // 实际支付金额 （扣卡不算）\r\n    \"remark\": \"\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
