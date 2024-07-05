@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "Base",
+			"name": "基础",
 			"item": [
 				{
 					"name": "获取验证码",
@@ -97,7 +97,7 @@
 			"id": "2e916061-d1e4-4d73-b605-13ac0bbee9bf"
 		},
 		{
-			"name": "User",
+			"name": "用户",
 			"item": [
 				{
 					"name": "注册",
@@ -260,7 +260,7 @@
 			"id": "b67309ad-4ad1-43d7-add9-36bf1cb1ffae"
 		},
 		{
-			"name": "Product",
+			"name": "商品",
 			"item": [
 				{
 					"name": "规格",
@@ -627,10 +627,10 @@
 			"id": "ff6548ae-dfbe-42d9-99b5-406cff624bdf"
 		},
 		{
-			"name": "Member",
+			"name": "会员",
 			"item": [
 				{
-					"name": "Level",
+					"name": "等级",
 					"item": [
 						{
 							"name": "列表",
