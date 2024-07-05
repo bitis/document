@@ -184,21 +184,6 @@
 					"request": {
 						"method": "POST",
 						"header": [],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "mobile",
-									"value": "15138674502",
-									"type": "text"
-								},
-								{
-									"key": "password",
-									"value": "888888",
-									"type": "text"
-								}
-							]
-						},
 						"url": "{{host}}/api/store/auth/info"
 					},
 					"response": []
