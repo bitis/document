@@ -176,6 +176,34 @@
 					"response": []
 				},
 				{
+					"name": "信息",
+					"id": "c46f9452-5091-49bd-835a-bf2514454c24",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mobile",
+									"value": "15138674502",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "888888",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{host}}/api/store/auth/info"
+					},
+					"response": []
+				},
+				{
 					"name": "登出",
 					"id": "3d20578a-4803-4833-a443-6ef617dd9359",
 					"protocolProfileBehavior": {
