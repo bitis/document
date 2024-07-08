@@ -92,6 +92,23 @@
 						"url": "{{host}}/api/common/config"
 					},
 					"response": []
+				},
+				{
+					"name": "上传文件",
+					"id": "5a1497d7-e5f1-479c-9ab7-3709a1662122",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": "{{host}}/api/store/upload"
+					},
+					"response": []
 				}
 			],
 			"id": "2e916061-d1e4-4d73-b605-13ac0bbee9bf"
