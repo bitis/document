@@ -182,7 +182,7 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "POST",
+						"method": "GET",
 						"header": [],
 						"url": "{{host}}/api/store/auth/info"
 					},
