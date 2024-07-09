@@ -1891,6 +1891,25 @@
 				}
 			],
 			"id": "0816f502-aee7-4cb1-819b-073544869952"
+		},
+		{
+			"name": "Dashboard",
+			"item": [
+				{
+					"name": "消费数据",
+					"id": "0f82504c-9149-4ebb-b261-1936f1f8296d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{host}}/api/store/dashboard/consume-data"
+					},
+					"response": []
+				}
+			],
+			"id": "a4178e44-9116-4060-b5e7-7d82ebe24b36"
 		}
 	],
 	"auth": {
