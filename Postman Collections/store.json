@@ -1896,7 +1896,7 @@
 			"name": "Dashboard",
 			"item": [
 				{
-					"name": "消费数据-Line Chat",
+					"name": "消费数据-Line Chart",
 					"id": "0f82504c-9149-4ebb-b261-1936f1f8296d",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
