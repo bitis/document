@@ -669,7 +669,7 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
+								"method": "POST",
 								"header": [],
 								"url": "{{host}}/api/store/member/level/list"
 							},
