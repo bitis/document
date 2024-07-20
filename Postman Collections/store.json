@@ -1949,16 +1949,9 @@
 						"header": [],
 						"body": {
 							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "name",
-									"value": "",
-									"type": "text",
-									"description": "签名内容"
-								}
-							]
+							"formdata": []
 						},
-						"url": "{{host}}/api/store/sms/createSignature"
+						"url": "{{host}}/api/store/sms/getSignatures"
 					},
 					"response": []
 				}
