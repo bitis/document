@@ -1978,7 +1978,7 @@
 					"response": []
 				},
 				{
-					"name": "提交发送任务 Copy",
+					"name": "提交记录列表",
 					"id": "f509a8a8-e8d7-43e5-9882-533148daa3b6",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1987,15 +1987,53 @@
 						"method": "POST",
 						"header": [],
 						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"timing\": \"2024-07-21 05:05:00\", // 定时发送时间\r\n    \"title\": \"212\", // 标题\r\n    \"signature\": \"【签名】\", // 签名\r\n    \"content\": \"12\", // 内容\r\n    \"mobiles\": [] // 输入的手机号\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "",
+									"description": "搜索",
+									"type": "text"
+								},
+								{
+									"key": "created_at",
+									"value": "",
+									"description": "时间筛选",
+									"type": "text"
 								}
-							}
+							]
 						},
-						"url": "{{host}}/api/store/sms/send"
+						"url": "{{host}}/api/store/sms/history"
+					},
+					"response": []
+				},
+				{
+					"name": "发送明细",
+					"id": "6e41536e-f55b-4b81-94cd-006546569dd6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "",
+									"description": "搜索",
+									"type": "text"
+								},
+								{
+									"key": "created_at",
+									"value": "",
+									"description": "时间筛选",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{host}}/api/store/sms/detailRecord"
 					},
 					"response": []
 				}
