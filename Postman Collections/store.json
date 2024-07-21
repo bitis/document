@@ -2020,9 +2020,15 @@
 							"mode": "formdata",
 							"formdata": [
 								{
-									"key": "title",
+									"key": "record_id",
 									"value": "",
-									"description": "搜索",
+									"description": "提交记录ID",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "",
+									"description": "手机号",
 									"type": "text"
 								},
 								{
