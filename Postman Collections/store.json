@@ -2021,7 +2021,7 @@
 							"formdata": [
 								{
 									"key": "record_id",
-									"value": "",
+									"value": "1",
 									"description": "提交记录ID",
 									"type": "text"
 								},
