@@ -1199,7 +1199,7 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
+						"method": "POST",
 						"header": [],
 						"url": {
 							"raw": "{{host}}/api/store/card/list?keyword&type",
@@ -1220,8 +1220,7 @@
 								},
 								{
 									"key": "type",
-									"value": null,
-									"type": "text"
+									"value": null
 								}
 							]
 						}
@@ -1235,7 +1234,7 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
+						"method": "POST",
 						"header": [],
 						"url": {
 							"raw": "{{host}}/api/store/card/detail?id=1",
@@ -1251,8 +1250,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1",
-									"type": "text"
+									"value": "1"
 								}
 							]
 						}
