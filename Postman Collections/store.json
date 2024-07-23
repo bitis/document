@@ -1202,7 +1202,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{host}}/api/store/card/list?keyword",
+							"raw": "{{host}}/api/store/card/list?keyword&type",
 							"host": [
 								"{{host}}"
 							],
@@ -1217,6 +1217,11 @@
 									"key": "keyword",
 									"value": null,
 									"description": "搜索词"
+								},
+								{
+									"key": "type",
+									"value": null,
+									"type": "text"
 								}
 							]
 						}
