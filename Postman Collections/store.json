@@ -1466,27 +1466,24 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
+						"method": "POST",
 						"header": [],
-						"url": {
-							"raw": "{{host}}/api/store/staff/list?keyword",
-							"host": [
-								"{{host}}"
-							],
-							"path": [
-								"api",
-								"store",
-								"staff",
-								"list"
-							],
-							"query": [
+						"body": {
+							"mode": "formdata",
+							"formdata": [
 								{
 									"key": "keyword",
-									"value": null,
-									"description": "搜索词"
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "1",
+									"type": "text"
 								}
 							]
-						}
+						},
+						"url": "{{host}}/api/store/staff/list"
 					},
 					"response": []
 				},
