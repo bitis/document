@@ -1672,6 +1672,70 @@
 			"id": "f495162d-bd10-42f9-ba06-5c3d1b8010e5"
 		},
 		{
+			"name": "门店",
+			"item": [
+				{
+					"name": "编辑",
+					"id": "b7370207-4a8c-45ac-bec3-86895ce1c976",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{host}}/api/store/info",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"store",
+								"info"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"type": "text",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "删除",
+					"id": "9d595d58-049a-4754-bad2-f406e66a97b8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{host}}/api/store/job/destroy"
+					},
+					"response": []
+				}
+			],
+			"id": "3dfb08af-c768-435a-854a-5aec2a493217"
+		},
+		{
 			"name": "菜单",
 			"item": [
 				{
