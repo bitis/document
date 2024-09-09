@@ -1681,21 +1681,21 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "POST",
+						"method": "GET",
 						"header": [],
 						"body": {
 							"mode": "formdata",
 							"formdata": []
 						},
 						"url": {
-							"raw": "{{host}}/api/store/info",
+							"raw": "{{host}}/api/store/detail",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
 								"api",
 								"store",
-								"info"
+								"detail"
 							],
 							"query": [
 								{
