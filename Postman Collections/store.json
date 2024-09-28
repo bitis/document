@@ -100,11 +100,17 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
+						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "formdata",
-							"formdata": []
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/Administrator/Desktop/0fdd31d2bc2b94eeda19b999c69b500c469f18ddb.png"
+								}
+							]
 						},
 						"url": "{{host}}/api/store/upload"
 					},
@@ -1206,28 +1212,18 @@
 					"request": {
 						"method": "POST",
 						"header": [],
-						"url": {
-							"raw": "{{host}}/api/store/member/list?words=&mobile",
-							"host": [
-								"{{host}}"
-							],
-							"path": [
-								"api",
-								"store",
-								"member",
-								"list"
-							],
-							"query": [
+						"body": {
+							"mode": "formdata",
+							"formdata": [
 								{
 									"key": "words",
-									"value": ""
-								},
-								{
-									"key": "mobile",
-									"value": null
+									"value": "",
+									"equals": true,
+									"uuid": "533eb409-022f-4d09-90ba-517503a65ef6"
 								}
 							]
-						}
+						},
+						"url": "{{host}}/api/store/member/list"
 					},
 					"response": []
 				},
