@@ -319,7 +319,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"尺码\",\r\n    \"values\": [\r\n        \"XL\", \"XXL\", \"XXXL\"\r\n    ]\r\n}",
+									"raw": "{\r\n    \"id\": 4,\r\n    \"name\": \"尺码\",\r\n    \"values\": [\r\n        \"XL\", \"XXL\", \"XXXL\"\r\n    ]\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
