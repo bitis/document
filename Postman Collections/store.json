@@ -206,6 +206,37 @@
 					"response": []
 				},
 				{
+					"name": "绑定二维码",
+					"id": "5089002b-ebcf-4358-8163-2fe5956b2ee4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/store/auth/info?id=1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"store",
+								"auth",
+								"info"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1",
+									"description": "会员ID"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "登出",
 					"id": "3d20578a-4803-4833-a443-6ef617dd9359",
 					"protocolProfileBehavior": {
