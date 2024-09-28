@@ -183,7 +183,7 @@
 								},
 								{
 									"key": "password",
-									"value": "888888",
+									"value": "000000",
 									"type": "text"
 								}
 							]
@@ -202,37 +202,6 @@
 						"method": "GET",
 						"header": [],
 						"url": "{{host}}/api/store/auth/info"
-					},
-					"response": []
-				},
-				{
-					"name": "绑定二维码",
-					"id": "5089002b-ebcf-4358-8163-2fe5956b2ee4",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{host}}/api/store/auth/info?id=1",
-							"host": [
-								"{{host}}"
-							],
-							"path": [
-								"api",
-								"store",
-								"auth",
-								"info"
-							],
-							"query": [
-								{
-									"key": "id",
-									"value": "1",
-									"description": "会员ID"
-								}
-							]
-						}
 					},
 					"response": []
 				},
@@ -1195,6 +1164,38 @@
 						}
 					],
 					"id": "25fb21a1-fda3-4bb3-9ff9-b5488dd8acf9"
+				},
+				{
+					"name": "绑定二维码",
+					"id": "5089002b-ebcf-4358-8163-2fe5956b2ee4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/store/member/qrcode?id=1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"store",
+								"member",
+								"qrcode"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1",
+									"description": "会员ID",
+									"type": "text"
+								}
+							]
+						}
+					},
+					"response": []
 				},
 				{
 					"name": "列表",
