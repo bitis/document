@@ -1764,6 +1764,54 @@
 			"id": "3dfb08af-c768-435a-854a-5aec2a493217"
 		},
 		{
+			"name": "行业接口",
+			"item": [
+				{
+					"name": "洗衣",
+					"item": [
+						{
+							"name": "编辑",
+							"id": "16a097ab-62fe-43bd-a651-29a6bfd65832",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{host}}/api/store/clothes/param/list"
+							},
+							"response": []
+						},
+						{
+							"name": "删除",
+							"id": "04a99ee8-b3d1-424d-967f-0863ca40e3da",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{host}}/api/store/job/destroy"
+							},
+							"response": []
+						}
+					],
+					"id": "bcd4ac0f-ad8c-4285-9b89-d68e05081793"
+				}
+			],
+			"id": "12a1f8b7-db1a-49a6-8c30-a942325a9e60"
+		},
+		{
 			"name": "菜单",
 			"item": [
 				{
