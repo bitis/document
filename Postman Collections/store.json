@@ -1767,7 +1767,7 @@
 			"name": "行业接口",
 			"item": [
 				{
-					"name": "洗衣",
+					"name": "洗衣行业参数",
 					"item": [
 						{
 							"name": "列表",
@@ -1783,7 +1783,7 @@
 									"formdata": [
 										{
 											"key": "type",
-											"value": "1",
+											"value": "",
 											"type": "text"
 										}
 									]
