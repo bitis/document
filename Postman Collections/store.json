@@ -1770,14 +1770,24 @@
 					"name": "洗衣",
 					"item": [
 						{
-							"name": "编辑",
+							"name": "参数",
 							"id": "16a097ab-62fe-43bd-a651-29a6bfd65832",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
+								"method": "POST",
 								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "type",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
 								"url": "{{host}}/api/store/clothes/param/list"
 							},
 							"response": []
@@ -1801,7 +1811,49 @@
 										}
 									]
 								},
-								"url": "{{host}}/api/store/job/destroy"
+								"url": "{{host}}/api/store/clothes/param/destroy"
+							},
+							"response": []
+						},
+						{
+							"name": "编辑",
+							"id": "9ce61b78-2932-4130-8e69-c7c20ad4e8fb",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "type",
+											"value": "1",
+											"description": "类型",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "哈哈",
+											"description": "名称",
+											"type": "text"
+										},
+										{
+											"key": "code",
+											"value": "hh",
+											"description": "快捷搜索",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"value": "",
+											"description": "图片地址",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{host}}/api/store/clothes/param/form"
 							},
 							"response": []
 						}
