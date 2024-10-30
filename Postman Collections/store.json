@@ -1770,7 +1770,7 @@
 					"name": "洗衣",
 					"item": [
 						{
-							"name": "参数",
+							"name": "列表",
 							"id": "16a097ab-62fe-43bd-a651-29a6bfd65832",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -1783,7 +1783,7 @@
 									"formdata": [
 										{
 											"key": "type",
-											"value": "",
+											"value": "1",
 											"type": "text"
 										}
 									]
