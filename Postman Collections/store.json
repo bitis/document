@@ -1228,6 +1228,30 @@
 					"response": []
 				},
 				{
+					"name": "详情",
+					"id": "a1366d13-0014-49ef-84c5-3cecd3984836",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "1",
+									"equals": true,
+									"uuid": "533eb409-022f-4d09-90ba-517503a65ef6"
+								}
+							]
+						},
+						"url": "{{host}}/api/store/member/detail"
+					},
+					"response": []
+				},
+				{
 					"name": "余额流水",
 					"id": "010ba173-dd2e-433b-a94e-00298bf74651",
 					"protocolProfileBehavior": {
