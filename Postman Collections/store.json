@@ -1649,7 +1649,7 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
+						"method": "POST",
 						"header": [],
 						"url": "{{host}}/api/store/job/list"
 					},
