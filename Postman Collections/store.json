@@ -308,7 +308,7 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
+								"method": "POST",
 								"header": [],
 								"url": "{{host}}/api/store/product/spec/list"
 							},
