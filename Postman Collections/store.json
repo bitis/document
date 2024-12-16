@@ -804,7 +804,7 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"url": "{{host}}/api/store/member/level/list"
+								"url": "{{host}}/api/store/member/grade/list"
 							},
 							"response": []
 						},
@@ -818,7 +818,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{host}}/api/store/member/level/detail?id=1",
+									"raw": "{{host}}/api/store/member/grade/detail?id=1",
 									"host": [
 										"{{host}}"
 									],
@@ -826,7 +826,7 @@
 										"api",
 										"store",
 										"member",
-										"level",
+										"grade",
 										"detail"
 									],
 									"query": [
@@ -850,14 +850,14 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"尺码\",\r\n    \"flag\": 0, // 0 无折扣 1 有折扣\r\n    \"discount\": 0.1, // 折扣 0.1-9.9\r\n    \"item_limit\": 1, // 折扣限制 0 无限制 1 限制（指定商品项目ID，如下）\r\n    \"service_ids\": [\r\n        1,\r\n        2,\r\n        3\r\n    ],\r\n    \"product_ids\": [\r\n        4,\r\n        5,\r\n        6\r\n    ]\r\n}",
+									"raw": "{\r\n    \"name\": \"哈哈\",\r\n    \"flag\": 0, // 0 无折扣 1 有折扣\r\n    \"discount\": 0.1, // 折扣 0.1-9.9\r\n    \"item_limit\": 1, // 折扣限制 0 无限制 1 限制（指定商品项目ID，如下）\r\n    \"service_ids\": [\r\n        1,\r\n        2,\r\n        3\r\n    ],\r\n    \"product_ids\": [\r\n        4,\r\n        5,\r\n        6\r\n    ]\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
 										}
 									}
 								},
-								"url": "{{host}}/api/store/member/level/form"
+								"url": "{{host}}/api/store/member/grade/form"
 							},
 							"response": []
 						},
@@ -879,7 +879,7 @@
 										}
 									}
 								},
-								"url": "{{host}}/api/store/member/level/destroy"
+								"url": "{{host}}/api/store/member/grade/destroy"
 							},
 							"response": []
 						}
