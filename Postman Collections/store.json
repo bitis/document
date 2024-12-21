@@ -896,7 +896,7 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
+								"method": "POST",
 								"header": [],
 								"url": {
 									"raw": "{{host}}/api/store/member/card/list?member_id=1",
@@ -913,8 +913,7 @@
 									"query": [
 										{
 											"key": "member_id",
-											"value": "1",
-											"type": "text"
+											"value": "1"
 										}
 									]
 								}
