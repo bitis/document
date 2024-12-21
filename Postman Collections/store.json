@@ -1508,7 +1508,8 @@
 								{
 									"key": "status",
 									"value": "1",
-									"type": "text"
+									"type": "text",
+									"disabled": true
 								}
 							]
 						},
@@ -1557,7 +1558,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\": \"\",\r\n    \"name\": \"金鸡奖\", // 卡片名称\r\n    \"avatar\": \"\",\r\n    \"mobile\": \"13800138000\",\r\n    \"status\": \"0\", // 0 正常 1 禁用 2 注销\r\n    \"job_id\": 1,\r\n    \"password\": 123456,\r\n    \"remark\": \"\"\r\n}",
+							"raw": "{\r\n    \"id\": \"\",\r\n    \"name\": \"金鸡奖\", // 卡片名称\r\n    \"avatar\": \"\",\r\n    \"mobile\": \"13800138001\",\r\n    \"status\": \"0\", // 0 正常 1 禁用 2 注销\r\n    \"job_id\": 1,\r\n    \"password\": 123456,\r\n    \"remark\": \"\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2380,7 +2381,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"member_id\": 1,\r\n    \"card_id\": 1,\r\n    \"pay_amount\": 998.00, // 实际支付金额\r\n    \"payment_type\": 1, // 支付方式 （见：通用.config.payment_types）\r\n    \"remark\": \"\",\r\n    \"staffs\": [\r\n        {\r\n            \"id\": 1,\r\n            \"performance\": 998.00, // 业绩\r\n            \"commission\": 9.98 // 提成\r\n        }\r\n    ]\r\n}",
+							"raw": "{\r\n    \"member_id\": 1,\r\n    \"card_id\": 14,\r\n    \"pay_amount\": 998.00, // 实际支付金额\r\n    \"payment_type\": 1, // 支付方式 （见：通用.config.payment_types）\r\n    \"remark\": \"\",\r\n    \"staffs\": [\r\n        {\r\n            \"id\": 1,\r\n            \"performance\": 998.00, // 业绩\r\n            \"commission\": 9.98 // 提成\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
