@@ -2394,6 +2394,29 @@
 				}
 			],
 			"id": "4b6bcdfd-4dc8-48b5-b0d6-02e7530b4f7c"
+		},
+		{
+			"name": "订单",
+			"item": [
+				{
+					"name": "列表",
+					"id": "deec1a21-4e0c-42e1-83af-9d7cd66f7333",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}"
+						},
+						"url": "{{host}}/api/store/order/list"
+					},
+					"response": []
+				}
+			],
+			"id": "5bf3f758-11b3-4507-930a-8909451e054c"
 		}
 	],
 	"auth": {
