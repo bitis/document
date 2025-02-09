@@ -921,6 +921,37 @@
 							"response": []
 						},
 						{
+							"name": "详情",
+							"id": "b7b55bf2-6da0-4e29-a59b-3f02064c64a5",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/api/store/member/card/list?id=1",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"store",
+										"member",
+										"card",
+										"list"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
 							"name": "获取卡片项目 （扣卡用）",
 							"id": "863790ff-39ec-43ab-a136-5fe3fc0e82f3",
 							"protocolProfileBehavior": {
