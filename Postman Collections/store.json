@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "ad67d25a-28fb-4d22-a366-a84e0eb05255",
 		"name": "门店端",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+		"schema": "https://schema.postman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
 		{
