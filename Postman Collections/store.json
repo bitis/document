@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "ad67d25a-28fb-4d22-a366-a84e0eb05255",
 		"name": "门店端",
-		"schema": "https://schema.postman.com/json/collection/v2.0.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
 		{
@@ -2476,6 +2476,110 @@
 				}
 			],
 			"id": "5bf3f758-11b3-4507-930a-8909451e054c"
+		},
+		{
+			"name": "预约",
+			"item": [
+				{
+					"name": "列表",
+					"id": "e8f67413-1aa4-4e54-9db8-de99a62a51c2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "member_id",
+									"value": "",
+									"type": "text",
+									"uuid": "0a51e866-ba4c-4436-8ce4-caf9fc5c7525"
+								},
+								{
+									"key": "status",
+									"value": "",
+									"description": "1 待确认, 2 待服务, 3 已超时, 4 已完成, 5 已取消",
+									"type": "text",
+									"uuid": "53a57479-89aa-43f1-8396-49f2c699c9db"
+								},
+								{
+									"key": "start_time",
+									"value": "",
+									"type": "text",
+									"uuid": "05bc06e4-d8a6-4410-b5b9-429213f6cbfb"
+								},
+								{
+									"key": "end_time",
+									"value": "",
+									"type": "text",
+									"uuid": "46f7cc45-8422-4792-95dd-17ef74ad8e50"
+								},
+								{
+									"key": "search",
+									"value": "",
+									"type": "text",
+									"uuid": "8d90d279-d2fb-490e-b658-a42ec2042a91"
+								}
+							]
+						},
+						"url": "{{host}}/api/store/appointment/list"
+					},
+					"response": []
+				},
+				{
+					"name": "预约",
+					"id": "9abe25f7-148c-479a-bf2c-b9308d70c595",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "member_id",
+									"value": "",
+									"type": "text",
+									"uuid": "0a51e866-ba4c-4436-8ce4-caf9fc5c7525"
+								},
+								{
+									"key": "status",
+									"value": "",
+									"description": "1 待确认, 2 待服务, 3 已超时, 4 已完成, 5 已取消",
+									"type": "text",
+									"uuid": "53a57479-89aa-43f1-8396-49f2c699c9db"
+								},
+								{
+									"key": "start_time",
+									"value": "",
+									"type": "text",
+									"uuid": "05bc06e4-d8a6-4410-b5b9-429213f6cbfb"
+								},
+								{
+									"key": "end_time",
+									"value": "",
+									"type": "text",
+									"uuid": "46f7cc45-8422-4792-95dd-17ef74ad8e50"
+								},
+								{
+									"key": "search",
+									"value": "",
+									"type": "text",
+									"uuid": "8d90d279-d2fb-490e-b658-a42ec2042a91"
+								}
+							]
+						},
+						"url": "{{host}}/api/store/appointment/list"
+					},
+					"response": []
+				}
+			],
+			"id": "cf1a9183-1fbd-4845-a731-af0f4a876cc3"
 		}
 	],
 	"auth": {
