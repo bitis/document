@@ -2482,61 +2482,90 @@
 			"item": [
 				{
 					"name": "配置",
-					"item": [],
+					"item": [
+						{
+							"name": "详情",
+							"id": "c2e2499f-8fc4-497f-bc2c-09f7e6feba0a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "{{host}}/api/store/appointment/config/detail"
+							},
+							"response": []
+						},
+						{
+							"name": "更新配置",
+							"id": "5f5a6925-6e41-45f4-82c1-fb3e1460d743",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "earliest",
+											"value": "09:00",
+											"description": "最早预约时间",
+											"type": "text",
+											"uuid": "6e0a7831-90e9-4756-bcd6-7586ada41482"
+										},
+										{
+											"key": "latest",
+											"value": "21:00",
+											"description": "最晚预约时间",
+											"type": "text",
+											"uuid": "352d2354-9208-43cf-b13e-f4c7185ef85a"
+										},
+										{
+											"key": "interval",
+											"value": "30",
+											"description": "时间间隔 分钟",
+											"type": "text",
+											"uuid": "04353e9a-d192-466b-8a49-4d35a9e6a1b7"
+										},
+										{
+											"key": "max_number",
+											"value": "5",
+											"description": "最大预约人数",
+											"type": "text",
+											"uuid": "517a3161-899f-421a-9b05-5eecd84b2fa6"
+										},
+										{
+											"key": "before_time",
+											"value": "30",
+											"description": "最迟可以提前多少分钟预约",
+											"type": "text",
+											"uuid": "66e97d20-ab8f-4606-a7ca-3d69dbfe4d8c"
+										},
+										{
+											"key": "status",
+											"value": "1",
+											"description": "1 开启预约功能 0 关闭",
+											"type": "text",
+											"uuid": "705241b4-9fdd-4a55-a38a-5fd10141f8c4"
+										}
+									]
+								},
+								"url": "{{host}}/api/store/appointment/config/form"
+							},
+							"response": []
+						}
+					],
 					"id": "efc9b2e4-d3c1-4b4c-9034-d9f381bfb450"
 				},
 				{
 					"name": "列表",
 					"id": "e8f67413-1aa4-4e54-9db8-de99a62a51c2",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "member_id",
-									"value": "",
-									"type": "text",
-									"uuid": "0a51e866-ba4c-4436-8ce4-caf9fc5c7525"
-								},
-								{
-									"key": "status",
-									"value": "",
-									"description": "1 待确认, 2 待服务, 3 已超时, 4 已完成, 5 已取消",
-									"type": "text",
-									"uuid": "53a57479-89aa-43f1-8396-49f2c699c9db"
-								},
-								{
-									"key": "start_time",
-									"value": "",
-									"type": "text",
-									"uuid": "05bc06e4-d8a6-4410-b5b9-429213f6cbfb"
-								},
-								{
-									"key": "end_time",
-									"value": "",
-									"type": "text",
-									"uuid": "46f7cc45-8422-4792-95dd-17ef74ad8e50"
-								},
-								{
-									"key": "search",
-									"value": "",
-									"type": "text",
-									"uuid": "8d90d279-d2fb-490e-b658-a42ec2042a91"
-								}
-							]
-						},
-						"url": "{{host}}/api/store/appointment/list"
-					},
-					"response": []
-				},
-				{
-					"name": "详情",
-					"id": "c2e2499f-8fc4-497f-bc2c-09f7e6feba0a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
