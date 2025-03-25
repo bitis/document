@@ -2481,8 +2481,62 @@
 			"name": "预约",
 			"item": [
 				{
+					"name": "配置",
+					"item": [],
+					"id": "efc9b2e4-d3c1-4b4c-9034-d9f381bfb450"
+				},
+				{
 					"name": "列表",
 					"id": "e8f67413-1aa4-4e54-9db8-de99a62a51c2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "member_id",
+									"value": "",
+									"type": "text",
+									"uuid": "0a51e866-ba4c-4436-8ce4-caf9fc5c7525"
+								},
+								{
+									"key": "status",
+									"value": "",
+									"description": "1 待确认, 2 待服务, 3 已超时, 4 已完成, 5 已取消",
+									"type": "text",
+									"uuid": "53a57479-89aa-43f1-8396-49f2c699c9db"
+								},
+								{
+									"key": "start_time",
+									"value": "",
+									"type": "text",
+									"uuid": "05bc06e4-d8a6-4410-b5b9-429213f6cbfb"
+								},
+								{
+									"key": "end_time",
+									"value": "",
+									"type": "text",
+									"uuid": "46f7cc45-8422-4792-95dd-17ef74ad8e50"
+								},
+								{
+									"key": "search",
+									"value": "",
+									"type": "text",
+									"uuid": "8d90d279-d2fb-490e-b658-a42ec2042a91"
+								}
+							]
+						},
+						"url": "{{host}}/api/store/appointment/list"
+					},
+					"response": []
+				},
+				{
+					"name": "详情",
+					"id": "c2e2499f-8fc4-497f-bc2c-09f7e6feba0a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -2542,39 +2596,104 @@
 							"mode": "formdata",
 							"formdata": [
 								{
+									"key": "id",
+									"value": "",
+									"type": "text",
+									"uuid": "8e110af4-7261-4397-9359-add193005002",
+									"disabled": true
+								},
+								{
 									"key": "member_id",
 									"value": "",
 									"type": "text",
 									"uuid": "0a51e866-ba4c-4436-8ce4-caf9fc5c7525"
 								},
 								{
-									"key": "status",
+									"key": "member_name",
 									"value": "",
-									"description": "1 待确认, 2 待服务, 3 已超时, 4 已完成, 5 已取消",
 									"type": "text",
 									"uuid": "53a57479-89aa-43f1-8396-49f2c699c9db"
 								},
 								{
-									"key": "start_time",
+									"key": "mobile",
 									"value": "",
 									"type": "text",
 									"uuid": "05bc06e4-d8a6-4410-b5b9-429213f6cbfb"
 								},
 								{
-									"key": "end_time",
+									"key": "product_id",
 									"value": "",
 									"type": "text",
 									"uuid": "46f7cc45-8422-4792-95dd-17ef74ad8e50"
 								},
 								{
-									"key": "search",
+									"key": "product_name",
 									"value": "",
 									"type": "text",
-									"uuid": "8d90d279-d2fb-490e-b658-a42ec2042a91"
+									"uuid": "8d90d279-d2fb-490e-b658-a42ec2042a91",
+									"description": "服务名称"
+								},
+								{
+									"key": "time",
+									"value": "",
+									"description": "2025-02-25 19:00",
+									"type": "text",
+									"uuid": "fad4298d-93b9-4c03-b3e4-53a84a5cc0f7"
+								},
+								{
+									"key": "time_text",
+									"value": "",
+									"description": "19:00-20:00",
+									"type": "text",
+									"uuid": "be967308-259e-43fd-813d-a41de83e03f6"
+								},
+								{
+									"key": "number",
+									"value": "",
+									"description": "预约人数",
+									"type": "text",
+									"uuid": "54e42879-2b4f-4f8d-ad21-ed2c73dd59de"
+								},
+								{
+									"key": "remark",
+									"value": "",
+									"type": "text",
+									"uuid": "9132056b-ab88-4491-93e7-b45f05907e38"
 								}
 							]
 						},
 						"url": "{{host}}/api/store/appointment/list"
+					},
+					"response": []
+				},
+				{
+					"name": "更新状态",
+					"id": "5787a65e-5370-4324-8312-e1eefdc0a60a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "",
+									"type": "text",
+									"uuid": "719df01b-b547-4036-b987-f2c8ea07305d"
+								},
+								{
+									"key": "status",
+									"value": "1",
+									"description": "1 待确认, 2 待服务, 3 已超时, 4 已完成, 5 已取消",
+									"type": "text",
+									"uuid": "b3e84bba-bbc8-40d6-9238-d7fe39223c89"
+								}
+							]
+						},
+						"url": "{{host}}/api/store/appointment/setStatus"
 					},
 					"response": []
 				}
