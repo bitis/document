@@ -2743,15 +2743,7 @@
 						"header": [],
 						"body": {
 							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "store_id",
-									"value": "",
-									"description": "门店ID",
-									"type": "text",
-									"uuid": "e5477198-19a8-4fbd-8bd6-0996f978f51c"
-								}
-							]
+							"formdata": []
 						},
 						"url": "{{host}}/api/store/feedback/list"
 					},
