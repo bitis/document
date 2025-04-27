@@ -2728,6 +2728,120 @@
 				}
 			],
 			"id": "cf1a9183-1fbd-4845-a731-af0f4a876cc3"
+		},
+		{
+			"name": "反馈",
+			"item": [
+				{
+					"name": "列表",
+					"id": "7a940611-e415-413a-8848-6cd292b345b0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "store_id",
+									"value": "",
+									"description": "门店ID",
+									"type": "text",
+									"uuid": "e5477198-19a8-4fbd-8bd6-0996f978f51c"
+								}
+							]
+						},
+						"url": "{{host}}/api/store/feedback/list"
+					},
+					"response": []
+				},
+				{
+					"name": "提交",
+					"id": "48c25277-6ee2-43d0-a0cc-07a77f1abd82",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "",
+									"type": "text",
+									"uuid": "8e110af4-7261-4397-9359-add193005002",
+									"disabled": true
+								},
+								{
+									"key": "member_id",
+									"value": "",
+									"type": "text",
+									"uuid": "0a51e866-ba4c-4436-8ce4-caf9fc5c7525"
+								},
+								{
+									"key": "member_name",
+									"value": "",
+									"type": "text",
+									"uuid": "53a57479-89aa-43f1-8396-49f2c699c9db"
+								},
+								{
+									"key": "mobile",
+									"value": "",
+									"type": "text",
+									"uuid": "05bc06e4-d8a6-4410-b5b9-429213f6cbfb"
+								},
+								{
+									"key": "product_id",
+									"value": "",
+									"type": "text",
+									"uuid": "46f7cc45-8422-4792-95dd-17ef74ad8e50"
+								},
+								{
+									"key": "product_name",
+									"value": "",
+									"type": "text",
+									"uuid": "8d90d279-d2fb-490e-b658-a42ec2042a91",
+									"description": "服务名称"
+								},
+								{
+									"key": "time",
+									"value": "",
+									"description": "2025-02-25 19:00",
+									"type": "text",
+									"uuid": "fad4298d-93b9-4c03-b3e4-53a84a5cc0f7"
+								},
+								{
+									"key": "time_text",
+									"value": "",
+									"description": "19:00-20:00",
+									"type": "text",
+									"uuid": "be967308-259e-43fd-813d-a41de83e03f6"
+								},
+								{
+									"key": "number",
+									"value": "",
+									"description": "预约人数",
+									"type": "text",
+									"uuid": "54e42879-2b4f-4f8d-ad21-ed2c73dd59de"
+								},
+								{
+									"key": "remark",
+									"value": "",
+									"type": "text",
+									"uuid": "9132056b-ab88-4491-93e7-b45f05907e38"
+								}
+							]
+						},
+						"url": "{{host}}/api/store/appointment/list"
+					},
+					"response": []
+				}
+			],
+			"id": "e3219a20-ba65-4fe9-a4c0-5e3b93a70b35"
 		}
 	],
 	"auth": {
