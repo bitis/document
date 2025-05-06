@@ -2253,14 +2253,14 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
+						"method": "POST",
 						"header": [],
 						"url": "{{host}}/api/store/dashboard/consume-data"
 					},
 					"response": []
 				},
 				{
-					"name": "消费数据-Line Chart Copy",
+					"name": "App 首页数据",
 					"id": "0c3e55f3-59b6-44c7-b31f-ca64d25e5371",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -2268,7 +2268,7 @@
 					"request": {
 						"method": "POST",
 						"header": [],
-						"url": "{{host}}/api/store/dashboard/consume-data"
+						"url": "{{host}}/api/store/dashboard/app-index"
 					},
 					"response": []
 				}
