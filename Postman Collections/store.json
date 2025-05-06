@@ -2821,7 +2821,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"min_number\": 10,\r\n    \"images\": false\r\n}",
+									"raw": "{\r\n    \"min_number\": 15,\r\n    \"status\": false\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
