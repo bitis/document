@@ -2786,6 +2786,57 @@
 				}
 			],
 			"id": "e3219a20-ba65-4fe9-a4c0-5e3b93a70b35"
+		},
+		{
+			"name": "设置",
+			"item": [
+				{
+					"name": "库存提醒",
+					"item": [
+						{
+							"name": "获取",
+							"id": "839f251a-6d65-4e57-aaa4-1b994c304ed3",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "{{host}}/api/store/setting/stock/detail"
+							},
+							"response": []
+						},
+						{
+							"name": "修改",
+							"id": "438bee2c-3972-46e3-9b76-c86c58b2a93f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"min_number\": 10,\r\n    \"images\": false\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{host}}/api/store/setting/stock/form"
+							},
+							"response": []
+						}
+					],
+					"id": "c1786752-8c30-4ba6-82f1-3918608a60ea"
+				}
+			],
+			"id": "5443149e-3516-4a9e-bd80-105628d8ae72"
 		}
 	],
 	"auth": {
