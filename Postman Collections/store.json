@@ -2258,6 +2258,19 @@
 						"url": "{{host}}/api/store/dashboard/consume-data"
 					},
 					"response": []
+				},
+				{
+					"name": "消费数据-Line Chart Copy",
+					"id": "0c3e55f3-59b6-44c7-b31f-ca64d25e5371",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "{{host}}/api/store/dashboard/consume-data"
+					},
+					"response": []
 				}
 			],
 			"id": "a4178e44-9116-4060-b5e7-7d82ebe24b36"
