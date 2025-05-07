@@ -2855,7 +2855,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "cf119353-8114-456d-a241-af795b19af67",
+				"id": "7d7cdaff-c5ba-4eab-82ab-b41211ad9efa",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -2866,7 +2866,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "c320bf42-1c40-4d4e-bed8-2b9596ba2846",
+				"id": "bf323677-4207-48d8-9eba-876d6a1e7345",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -2878,11 +2878,11 @@
 	"variable": [
 		{
 			"key": "host",
-			"value": ""
+			"value": "https://siruiw.cn"
 		},
 		{
 			"key": "token",
-			"value": "",
+			"value": "172|MvDMGJAPOPGwbrtXM75ID4vynwl8Jemmn7kQDskJ9e2fb4ba",
 			"type": "string"
 		}
 	]
