@@ -220,7 +220,26 @@
 					"request": {
 						"method": "POST",
 						"header": [],
-						"url": "{{host}}/api/store/auth/info"
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "password",
+									"value": "",
+									"description": "原密码",
+									"type": "text",
+									"uuid": "b94a1c46-d3ab-4a1b-9131-8becd39f5253"
+								},
+								{
+									"key": "new_password",
+									"value": "",
+									"description": "新密码",
+									"type": "text",
+									"uuid": "c24c9db3-9884-4a15-bf13-d8598a4923ce"
+								}
+							]
+						},
+						"url": "{{host}}/api/store/account/password"
 					},
 					"response": []
 				},
