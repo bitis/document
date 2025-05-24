@@ -212,6 +212,50 @@
 					"response": []
 				},
 				{
+					"name": "修改手机号",
+					"id": "50a46f85-51ea-4053-a476-aaead979ef9f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "{{host}}/api/store/auth/info"
+					},
+					"response": []
+				},
+				{
+					"name": "修改密码",
+					"id": "603a39d0-f796-4458-a567-a551d4864c9a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "moblie",
+									"value": null,
+									"type": "text",
+									"uuid": "fe6b81d6-69cb-4f83-beca-e7b8929b34be",
+									"equals": false
+								},
+								{
+									"key": "verify_code",
+									"value": "",
+									"type": "text",
+									"uuid": "1c2f1397-2c4e-4560-93a0-0cc84f3c6eaf"
+								}
+							]
+						},
+						"url": "{{host}}/api/store/account/mobile"
+					},
+					"response": []
+				},
+				{
 					"name": "登出",
 					"id": "3d20578a-4803-4833-a443-6ef617dd9359",
 					"protocolProfileBehavior": {
