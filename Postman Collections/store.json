@@ -2689,6 +2689,23 @@
 					"response": []
 				},
 				{
+					"name": "可预约服务",
+					"id": "ae470cec-1fe1-436f-8b22-055e894e0348",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": "{{host}}/api/store/appointment/services"
+					},
+					"response": []
+				},
+				{
 					"name": "预约",
 					"id": "9abe25f7-148c-479a-bf2c-b9308d70c595",
 					"protocolProfileBehavior": {
