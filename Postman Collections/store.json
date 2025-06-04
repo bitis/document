@@ -1485,24 +1485,18 @@
 					"request": {
 						"method": "POST",
 						"header": [],
-						"url": {
-							"raw": "{{host}}/api/store/card/detail?id=1",
-							"host": [
-								"{{host}}"
-							],
-							"path": [
-								"api",
-								"store",
-								"card",
-								"detail"
-							],
-							"query": [
+						"body": {
+							"mode": "formdata",
+							"formdata": [
 								{
 									"key": "id",
-									"value": "1"
+									"value": "1",
+									"type": "text",
+									"uuid": "3f135948-133c-4791-af8b-1f2f7f667c47"
 								}
 							]
-						}
+						},
+						"url": "{{host}}/api/store/card/detail"
 					},
 					"response": []
 				},
@@ -1603,24 +1597,18 @@
 					"request": {
 						"method": "POST",
 						"header": [],
-						"url": {
-							"raw": "{{host}}/api/store/credit/detail?id=1",
-							"host": [
-								"{{host}}"
-							],
-							"path": [
-								"api",
-								"store",
-								"credit",
-								"detail"
-							],
-							"query": [
+						"body": {
+							"mode": "formdata",
+							"formdata": [
 								{
 									"key": "id",
-									"value": "1"
+									"value": "1",
+									"type": "text",
+									"uuid": "59a28640-e16b-4fa4-acc2-6462ecef5e0c"
 								}
 							]
-						}
+						},
+						"url": "{{host}}/api/store/credit/detail"
 					},
 					"response": []
 				},
@@ -1635,7 +1623,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\": 1,\r\n    \"type\": 1, // 1 次卡 2 时长卡（卡片内项目有效期内不限次） 3 储值卡\r\n    \"name\": \"金鸡奖\", // 卡片名称\r\n    \"price\": \"798\", // 价格\r\n    \"valid_type\": 1, // 1 永久 2 限时（购买后多少天）\r\n    \"valid_days\": \"\", // 有效期：购买后多少天\r\n    \"remark\": \"\",\r\n    \"services\": [ // 卡片内项目\r\n        {\r\n            \"product_id\": 1,\r\n            \"number_type\": 1, // 1 限次 2 不限次\r\n            \"number\": 1\r\n        }\r\n    ],\r\n    \"gifts\": [ // 卡片赠送项目\r\n        {\r\n            \"product_id\": 2,\r\n            \"number_type\": 1, // 1 限次 2 不限次\r\n            \"number\": 1\r\n        }\r\n    ],\r\n    \"bonus\": 998.00, // 储值卡赠送金额\r\n    \"level_id\": 1 // 会员等级 （储值卡选择折扣）\r\n}",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"price\": 100.99,\r\n    \"send\": 10\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1689,7 +1677,7 @@
 								}
 							]
 						},
-						"url": "{{host}}/api/store/product/destroy"
+						"url": "{{host}}/api/store/credit/destroy"
 					},
 					"response": []
 				}
