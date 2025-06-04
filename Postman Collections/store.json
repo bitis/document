@@ -1579,6 +1579,124 @@
 			"id": "a5fc79cb-1cce-408a-8772-84873a58f371"
 		},
 		{
+			"name": "储值",
+			"item": [
+				{
+					"name": "列表",
+					"id": "f375cabf-fe8b-4a92-abbb-1108952d9081",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "{{host}}/api/store/card/list"
+					},
+					"response": []
+				},
+				{
+					"name": "详情",
+					"id": "3fbf62f1-dcfa-4d00-b8ba-ceecb2dc044b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/store/credit/detail?id=1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"store",
+								"credit",
+								"detail"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "编辑",
+					"id": "5de15844-d0d3-4b45-85a7-917689261472",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"type\": 1, // 1 次卡 2 时长卡（卡片内项目有效期内不限次） 3 储值卡\r\n    \"name\": \"金鸡奖\", // 卡片名称\r\n    \"price\": \"798\", // 价格\r\n    \"valid_type\": 1, // 1 永久 2 限时（购买后多少天）\r\n    \"valid_days\": \"\", // 有效期：购买后多少天\r\n    \"remark\": \"\",\r\n    \"services\": [ // 卡片内项目\r\n        {\r\n            \"product_id\": 1,\r\n            \"number_type\": 1, // 1 限次 2 不限次\r\n            \"number\": 1\r\n        }\r\n    ],\r\n    \"gifts\": [ // 卡片赠送项目\r\n        {\r\n            \"product_id\": 2,\r\n            \"number_type\": 1, // 1 限次 2 不限次\r\n            \"number\": 1\r\n        }\r\n    ],\r\n    \"bonus\": 998.00, // 储值卡赠送金额\r\n    \"level_id\": 1 // 会员等级 （储值卡选择折扣）\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{host}}/api/store/credit/form"
+					},
+					"response": [
+						{
+							"id": "179a638a-3e4e-4201-8bd5-012f3af1f4c1",
+							"name": "储值卡",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 2,\r\n    \"type\": 3, // 1 次卡 2 时长卡（卡片内项目有效期内不限次） 3 储值卡\r\n    \"name\": \"金鸡奖\", // 卡片名称\r\n    \"price\": \"798\", // 价格\r\n    \"valid_type\": 1, // 1 永久 2 限时（购买后多少天）\r\n    \"valid_days\": \"\", // 有效期：购买后多少天\r\n    \"remark\": \"\",\r\n    \"bonus\": 998.00, // 储值卡赠送金额\r\n    \"level_id\": 1 // 会员等级 （储值卡选择折扣）\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{host}}/api/store/card/form"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "删除",
+					"id": "09d02eeb-4c28-4ff7-8f89-f551ccb35b12",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{host}}/api/store/product/destroy"
+					},
+					"response": []
+				}
+			],
+			"id": "77172ce8-6a9e-485e-b099-fa0491d8b877"
+		},
+		{
 			"name": "员工",
 			"item": [
 				{
