@@ -189,7 +189,7 @@
 								},
 								{
 									"key": "password",
-									"value": "000000",
+									"value": "123456",
 									"type": "text"
 								}
 							]
@@ -2197,6 +2197,23 @@
 		{
 			"name": "提成设置",
 			"item": [
+				{
+					"name": "提成类型",
+					"id": "d5bb5805-2769-4528-9e1d-53fcf53c7e08",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": "{{host}}/api/store/commission/types"
+					},
+					"response": []
+				},
 				{
 					"name": "编辑",
 					"id": "b5d2e5ee-2d8d-4acf-aa9d-dd1193f43a52",
