@@ -3119,14 +3119,14 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "",
+									"raw": "{\r\n    \"auto_print\": true,\r\n    \"name\": \"店铺名称\",\r\n    \"endnote\": \"结尾文字\",\r\n    \"phone\": true,\r\n    \"address\": true,\r\n    \"operator\": true,\r\n    \"member_name\": true\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
 										}
 									}
 								},
-								"url": "{{host}}/api/store/setting/printer/config"
+								"url": "{{host}}/api/store/setting/printer/config-form"
 							},
 							"response": []
 						}
