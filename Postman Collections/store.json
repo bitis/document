@@ -3048,7 +3048,7 @@
 					"name": "打印设置",
 					"item": [
 						{
-							"name": "获取",
+							"name": "获取打印机信息",
 							"id": "526de60c-f3e0-4b06-8ee7-adc19c4293ac",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -3060,12 +3060,12 @@
 									"mode": "formdata",
 									"formdata": []
 								},
-								"url": "{{host}}/api/store/setting/stock/detail"
+								"url": "{{host}}/api/store/setting/printer/detail"
 							},
 							"response": []
 						},
 						{
-							"name": "修改",
+							"name": "修改打印机",
 							"id": "d7f42506-2c8d-42f4-b7bb-7440534d3721",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -3075,14 +3075,58 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"min_number\": 15,\r\n    \"status\": false\r\n}",
+									"raw": "{\r\n    \"name\": 15,\r\n    \"sn\": \"\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
 										}
 									}
 								},
-								"url": "{{host}}/api/store/setting/stock/form"
+								"url": "{{host}}/api/store/setting/printer/form"
+							},
+							"response": []
+						},
+						{
+							"name": "获取配置",
+							"id": "30653520-0caf-493e-8310-7948f2076284",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{host}}/api/store/setting/printer/config"
+							},
+							"response": []
+						},
+						{
+							"name": "修改配置",
+							"id": "7f172878-d9a7-4e1a-beae-d1ccc72bffd1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{host}}/api/store/setting/printer/config"
 							},
 							"response": []
 						}
