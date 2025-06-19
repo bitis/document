@@ -3043,6 +3043,51 @@
 						}
 					],
 					"id": "c1786752-8c30-4ba6-82f1-3918608a60ea"
+				},
+				{
+					"name": "打印设置",
+					"item": [
+						{
+							"name": "获取",
+							"id": "526de60c-f3e0-4b06-8ee7-adc19c4293ac",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "{{host}}/api/store/setting/stock/detail"
+							},
+							"response": []
+						},
+						{
+							"name": "修改",
+							"id": "d7f42506-2c8d-42f4-b7bb-7440534d3721",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"min_number\": 15,\r\n    \"status\": false\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{host}}/api/store/setting/stock/form"
+							},
+							"response": []
+						}
+					],
+					"id": "5765b9c1-5e35-49ff-aab7-ccb260baf3df"
 				}
 			],
 			"id": "5443149e-3516-4a9e-bd80-105628d8ae72"
