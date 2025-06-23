@@ -9,6 +9,64 @@
 			"name": "基础",
 			"item": [
 				{
+					"name": "公告",
+					"item": [
+						{
+							"name": "列表",
+							"id": "33123099-554f-45da-b49a-8d9e4b5f3d9a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "{{host}}/api/store/bulletin"
+							},
+							"response": []
+						},
+						{
+							"name": "详情",
+							"id": "09c1c02f-574b-4e15-b820-b59517ee9e30",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{host}}/api/store/bulletin/detail?id",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"store",
+										"bulletin",
+										"detail"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": null,
+											"type": "text"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "b835d928-9d4f-464b-9f33-97a193a85649"
+				},
+				{
 					"name": "获取验证码",
 					"id": "4b943ae2-c239-4ba9-acf5-2618cce702ee",
 					"protocolProfileBehavior": {
