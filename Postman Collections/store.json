@@ -2515,6 +2515,19 @@
 						"url": "{{host}}/api/store/dashboard/app-index"
 					},
 					"response": []
+				},
+				{
+					"name": "通知",
+					"id": "a20a9d23-a1d9-4ae8-bdad-78a6da7313fa",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "{{host}}/api/store/dashboard/notice"
+					},
+					"response": []
 				}
 			],
 			"id": "a4178e44-9116-4060-b5e7-7d82ebe24b36"
