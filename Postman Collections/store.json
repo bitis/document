@@ -2512,7 +2512,7 @@
 					"request": {
 						"method": "POST",
 						"header": [],
-						"url": "{{host}}/api/store/dashboard/app-index"
+						"url": "{{host}}/api/store/dashboard/appIndex"
 					},
 					"response": []
 				},
