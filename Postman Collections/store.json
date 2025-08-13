@@ -2491,8 +2491,26 @@
 			"name": "Dashboard",
 			"item": [
 				{
+					"name": "统计",
+					"item": [],
+					"id": "d876ad2c-537e-47cb-b7a0-3be18a2e5643"
+				},
+				{
 					"name": "消费数据-Line Chart",
 					"id": "0f82504c-9149-4ebb-b261-1936f1f8296d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "{{host}}/api/store/dashboard/consume-data"
+					},
+					"response": []
+				},
+				{
+					"name": "金额统计",
+					"id": "c52bdf98-f024-451b-ae79-c383a6881918",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
