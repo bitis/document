@@ -3254,6 +3254,24 @@
 				}
 			],
 			"id": "5443149e-3516-4a9e-bd80-105628d8ae72"
+		},
+		{
+			"name": "续费",
+			"item": [
+				{
+					"name": "套餐列表",
+					"id": "b513c13e-43a6-44d3-a3a0-95dc11ffdf69",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
+			"id": "43e21af1-1fba-4fe7-bb51-a03fef7f52ab"
 		}
 	],
 	"auth": {
