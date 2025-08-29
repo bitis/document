@@ -162,26 +162,15 @@
 						"header": [],
 						"body": {
 							"mode": "formdata",
-							"formdata": []
-						},
-						"url": {
-							"raw": "{{host}}/api/store/getLatestVersion?version=1.0.0",
-							"host": [
-								"{{host}}"
-							],
-							"path": [
-								"api",
-								"store",
-								"getLatestVersion"
-							],
-							"query": [
+							"formdata": [
 								{
 									"key": "version",
 									"value": "1.0.0",
 									"type": "text"
 								}
 							]
-						}
+						},
+						"url": "{{host}}/api/store/getLatestVersion"
 					},
 					"response": []
 				},
