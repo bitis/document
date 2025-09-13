@@ -3293,6 +3293,19 @@
 						"url": "{{host}}/api/store/priceList"
 					},
 					"response": []
+				},
+				{
+					"name": "下单",
+					"id": "b4ccb94e-e383-4bd9-b17b-b155ba9f0e5e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "{{host}}/api/store/priceList"
+					},
+					"response": []
 				}
 			],
 			"id": "43e21af1-1fba-4fe7-bb51-a03fef7f52ab"
