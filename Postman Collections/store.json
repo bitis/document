@@ -3303,7 +3303,32 @@
 					"request": {
 						"method": "POST",
 						"header": [],
-						"url": "{{host}}/api/store/priceList"
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "1",
+									"description": "套餐ID",
+									"type": "text",
+									"uuid": "dff5f7ae-f356-4a6d-bb07-e5b6e72f4194"
+								},
+								{
+									"key": "is_app",
+									"value": "",
+									"type": "text",
+									"uuid": "b20e5d9e-9148-4e1c-ae82-c8dacac442c3"
+								},
+								{
+									"key": "payment_channel",
+									"value": "wechat",
+									"description": "wechat | alipay",
+									"type": "text",
+									"uuid": "8974813f-3152-4947-8377-9d9907bcb034"
+								}
+							]
+						},
+						"url": "{{host}}/api/store/order"
 					},
 					"response": []
 				}
