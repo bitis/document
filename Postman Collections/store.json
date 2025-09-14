@@ -3321,7 +3321,7 @@
 								},
 								{
 									"key": "payment_channel",
-									"value": "wechat",
+									"value": "alipay",
 									"description": "wechat | alipay",
 									"type": "text",
 									"uuid": "8974813f-3152-4947-8377-9d9907bcb034"
