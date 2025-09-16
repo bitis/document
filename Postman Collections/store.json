@@ -272,6 +272,12 @@
 									"key": "password",
 									"value": "123456",
 									"type": "text"
+								},
+								{
+									"key": "device",
+									"value": "",
+									"type": "text",
+									"uuid": "f78cf1d2-34ab-4b5d-bb8e-7401780a3688"
 								}
 							]
 						},
