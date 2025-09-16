@@ -453,15 +453,9 @@
 						"header": [],
 						"body": {
 							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "password",
-									"value": "888888",
-									"type": "text"
-								}
-							]
+							"formdata": []
 						},
-						"url": "{{host}}/api/store/auth/destroy"
+						"url": "{{host}}/api/store/auth/tokens"
 					},
 					"response": []
 				}
