@@ -446,7 +446,7 @@
 						"auth": {
 							"type": "bearer",
 							"bearer": {
-								"token": "1|RSOmkqGOC988759TErPKxvjuLHXMZkEr9bCvHUEG"
+								"token": "{{token}}"
 							}
 						},
 						"method": "POST",
@@ -3369,7 +3369,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "7d7cdaff-c5ba-4eab-82ab-b41211ad9efa",
+				"id": "b627d82b-1960-412c-8da1-7878a7ea6083",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -3380,24 +3380,13 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "bf323677-4207-48d8-9eba-876d6a1e7345",
+				"id": "1648145e-e37f-4577-960c-352d9157846c",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
 					""
 				]
 			}
-		}
-	],
-	"variable": [
-		{
-			"key": "host",
-			"value": "https://siruiw.cn"
-		},
-		{
-			"key": "token",
-			"value": "172|MvDMGJAPOPGwbrtXM75ID4vynwl8Jemmn7kQDskJ9e2fb4ba",
-			"type": "string"
 		}
 	]
 }
