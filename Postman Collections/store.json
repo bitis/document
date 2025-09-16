@@ -435,6 +435,35 @@
 						"url": "{{host}}/api/store/auth/destroy"
 					},
 					"response": []
+				},
+				{
+					"name": "tokens",
+					"id": "920238c3-a3d1-4eea-92fd-fccc8858153b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "1|RSOmkqGOC988759TErPKxvjuLHXMZkEr9bCvHUEG"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "password",
+									"value": "888888",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{host}}/api/store/auth/destroy"
+					},
+					"response": []
 				}
 			],
 			"id": "b67309ad-4ad1-43d7-add9-36bf1cb1ffae"
