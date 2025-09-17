@@ -80,7 +80,7 @@
 							"formdata": []
 						},
 						"url": {
-							"raw": "{{host}}/api/verify/code?mobile=15138674502",
+							"raw": "{{host}}/api/verify/code?mobile=",
 							"host": [
 								"{{host}}"
 							],
@@ -92,8 +92,7 @@
 							"query": [
 								{
 									"key": "mobile",
-									"value": "15138674502",
-									"type": "text"
+									"value": ""
 								}
 							]
 						}
@@ -223,7 +222,7 @@
 								},
 								{
 									"key": "mobile",
-									"value": "15138674502",
+									"value": "",
 									"type": "text",
 									"description": "手机号"
 								},
@@ -265,7 +264,7 @@
 							"formdata": [
 								{
 									"key": "mobile",
-									"value": "15138674502",
+									"value": "",
 									"type": "text"
 								},
 								{
