@@ -1059,6 +1059,100 @@
 					"id": "014a0dff-bf7c-40e6-82e7-b1c0ed1c7a50"
 				},
 				{
+					"name": "跟进记录",
+					"item": [
+						{
+							"name": "列表",
+							"id": "de58a881-4029-4856-be19-06689ab07baa",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": "{{host}}/api/store/member/grade/list"
+							},
+							"response": []
+						},
+						{
+							"name": "详情",
+							"id": "df353a18-49d7-46be-aabd-e0743d4ee005",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/api/store/member/grade/detail?id=1",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"store",
+										"member",
+										"grade",
+										"detail"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "修改",
+							"id": "b5dafa49-6d3c-4dd5-89ac-8e2f931df2cc",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"哈哈\",\r\n    \"flag\": 0, // 0 无折扣 1 有折扣\r\n    \"discount\": 0.1, // 折扣 0.1-9.9\r\n    \"item_limit\": 1, // 折扣限制 0 无限制 1 限制（指定商品项目ID，如下）\r\n    \"service_ids\": [\r\n        1,\r\n        2,\r\n        3\r\n    ],\r\n    \"product_ids\": [\r\n        4,\r\n        5,\r\n        6\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{host}}/api/store/member/grade/form"
+							},
+							"response": []
+						},
+						{
+							"name": "删除",
+							"id": "ab8f2ab8-fdac-45c2-9696-7e458f8a3547",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"尺码\",\r\n    \"values\": [\r\n        \"XL\", \"XXL\", \"XXXL\"\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{host}}/api/store/member/grade/destroy"
+							},
+							"response": []
+						}
+					],
+					"id": "cb3037e5-e0f6-4cbf-bfea-22c7756d0299"
+				},
+				{
 					"name": "卡片",
 					"item": [
 						{
