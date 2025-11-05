@@ -1123,7 +1123,7 @@
 										}
 									}
 								},
-								"url": "{{host}}/api/store/member/grade/form"
+								"url": "{{host}}/api/store/member/note/form"
 							},
 							"response": []
 						},
