@@ -1075,37 +1075,6 @@
 							"response": []
 						},
 						{
-							"name": "详情",
-							"id": "df353a18-49d7-46be-aabd-e0743d4ee005",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{host}}/api/store/member/note/detail?id=1",
-									"host": [
-										"{{host}}"
-									],
-									"path": [
-										"api",
-										"store",
-										"member",
-										"note",
-										"detail"
-									],
-									"query": [
-										{
-											"key": "id",
-											"value": "1"
-										}
-									]
-								}
-							},
-							"response": []
-						},
-						{
 							"name": "修改",
 							"id": "b5dafa49-6d3c-4dd5-89ac-8e2f931df2cc",
 							"protocolProfileBehavior": {
