@@ -1145,7 +1145,7 @@
 										}
 									}
 								},
-								"url": "{{host}}/api/store/member/grade/destroy"
+								"url": "{{host}}/api/store/member/note/destroy"
 							},
 							"response": []
 						}
