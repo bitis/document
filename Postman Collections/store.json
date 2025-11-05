@@ -1084,7 +1084,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{host}}/api/store/member/grade/detail?id=1",
+									"raw": "{{host}}/api/store/member/note/detail?id=1",
 									"host": [
 										"{{host}}"
 									],
@@ -1092,7 +1092,7 @@
 										"api",
 										"store",
 										"member",
-										"grade",
+										"note",
 										"detail"
 									],
 									"query": [
