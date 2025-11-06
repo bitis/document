@@ -1347,7 +1347,7 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
+								"method": "POST",
 								"header": [],
 								"url": {
 									"raw": "{{host}}/api/store/member/order/list?member_id=1&type",
